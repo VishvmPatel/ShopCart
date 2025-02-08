@@ -13,7 +13,7 @@ body{
 .headerWrapper .header{width: 100%; height: auto;padding: 15px 0px;padding-right: 500px;}
 .logoWrapper img{width: 100%;}
 
-.headerWrapper .header .part2 .countryDrop{width: 150px;height: 60px;min-width: 150px;color: #000 !important;}
+.headerWrapper .header .part2 .countryDrop{width: 150px;height: 60px;min-width: 150px;color: #000 !important;border: 1px solid rgba(0, 0, 0, 0.2) !important;border-radius: 7px !important;}
 .headerWrapper .header .part2 .countryDrop{text-align:left; justify-content:flex-start !important;}
 .headerWrapper .header .part2 .countryDrop .label{font-size: 12px !important; text-transform: capitalize !important; color: rgba(0, 0,0,0.7) !important;}
 .headerWrapper .header .part2 .countryDrop .name{font-size: 14px !important; text-transform: capitalize !important; color: rgba(0, 0,0,0.8) !important;font-weight: 700;}
