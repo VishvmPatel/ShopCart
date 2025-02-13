@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 import Logo from '../../assets/images/logo.jpg'
 import CountryDropdown from '../CountryDropdown';
 import Button from '@mui/material/Button';
-import { IoIosSearch } from "react-icons/io";
 import { FiUser } from "react-icons/fi";
 import { IoBagOutline } from "react-icons/io5";
+import SearchBox from './SearchBox';
 
 const Header = () => {
     return (
@@ -25,14 +25,9 @@ const Header = () => {
                                 <Link to={'/'}><img src={Logo} alt='Logo'/></Link>
                             </div>
                             <div className='col-sm-10 d-flex align-items-center part2'>
-                                <CountryDropdown/>
 
-                                {/* Header Search Start here */}
-                                <div className='headerSearch ml-3 mr-3'>
-                                    <input type='text' placeholder='Search for products...' />
-                                    <Button><IoIosSearch /></Button>
-                                </div>    
-                                {/* Header Search End here */}
+                                <CountryDropdown/>
+                                <SearchBox/>
 
                                 <div className='part3 d-flex align-items-center ml-auto'>
                                     <Button className='circle mr-3'>
@@ -52,6 +47,22 @@ const Header = () => {
                         </div>
                     </div>
                 </header>
+
+                <nav>
+                    <div className='container'>
+                        <div className='row'>
+                            <div className='col-sm-3 navPart1'>
+                                <Button className='allCatTab'>
+                                    <span class="text">ALL CATEGORIES</span>
+                                </Button>
+                            </div>
+
+                            <div className='col-sm-9 navPart2'>
+
+                            </div>
+                        </div>
+                    </div>  
+                </nav>
             </div>
         </>
     )
