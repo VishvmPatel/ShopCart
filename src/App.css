@@ -150,3 +150,9 @@ nav .allCatTab:hover{
 nav .allCatTab .text{
   font-weight: 600;
 }
+nav .allCatTab .icon1 svg{
+  font-size: 20px !important;
+}
+nav .allCatTab .icon2 svg{
+  font-size: 20px !important;
+}

@@ -5,6 +5,7 @@ import Button from '@mui/material/Button';
 import { FiUser } from "react-icons/fi";
 import { IoBagOutline } from "react-icons/io5";
 import SearchBox from './SearchBox';
+import Navigation from './Navigation';
 
 const Header = () => {
     return (
@@ -48,21 +49,8 @@ const Header = () => {
                     </div>
                 </header>
 
-                <nav>
-                    <div className='container'>
-                        <div className='row'>
-                            <div className='col-sm-3 navPart1'>
-                                <Button className='allCatTab'>
-                                    <span class="text">ALL CATEGORIES</span>
-                                </Button>
-                            </div>
-
-                            <div className='col-sm-9 navPart2'>
-
-                            </div>
-                        </div>
-                    </div>  
-                </nav>
+                <Navigation/>
+                
             </div>
         </>
     )
