@@ -167,7 +167,7 @@ nav .navPart2 ul li a{
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  padding: 10px 20px;
+  padding: 8px 15px;
   transition: all 0.2s ease-in-out;
   border-radius: 25px;
 }
