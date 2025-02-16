@@ -63,7 +63,7 @@ body{
   opacity: 0.7;
 }
 
-header .headerSearch{
+.headerSearch{
   width: 60%; 
   height: 60px; 
   background:#f3f4f7 ; 
@@ -72,7 +72,7 @@ header .headerSearch{
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-header .headerSearch input{
+.headerSearch input{
   background: transparent !important; 
   outline: none !important; 
   font-size: 18px; color: rgba(0,0, 0,0.7);
@@ -81,13 +81,13 @@ header .headerSearch input{
   border: 0px !important;
   padding: 0px 20px !important;
 }
-header .headerSearch input::-webkit-input-placeholder{
+.headerSearch input::-webkit-input-placeholder{
   color: rgba(0,0, 0,0.6);
 }
-header .headerSearch button{
+.headerSearch button{
   position: absolute;
   top: 10px;
-  right: 15px; 
+  right: 10px; 
   z-index: 100;
   min-width: 40px !important;
   height: 40px !important; 
@@ -95,8 +95,9 @@ header .headerSearch button{
   border-radius: 50% !important;
   color: #000;
 }
-header .headerSearch button svg{
+.headerSearch button svg{
   font-size: 25px;
+  opacity: 0.8;
 }
 
 header .part3 .circle {
@@ -136,6 +137,36 @@ header .part3 .circle svg {
   height: 20px;
 }
 
+.locationModel .MuiPaper-elevation{
+  padding: 25px;
+}
+.locationModel .countryList{
+  margin-bottom: 0px;
+  max-height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.locationModel .countryList li{
+  width: 100%;
+  list-style: none;
+}
+.locationModel .countryList li button{
+  width: 100%;
+  text-transform: capitalize !important;
+  color: #000 !important;
+  justify-content: flex-start !important;
+  padding: 15px 20px !important;
+}
+
+nav .navPart1{
+  max-width: 20%;
+  flex: 0 0 20%;
+}
+nav .navPart2{
+  max-width: 80%;
+  flex: 0 0 80%;
+}
+
 nav .allCatTab{
   background: #22bef9;
   padding: 10px 15px !important;
@@ -167,7 +198,7 @@ nav .navPart2 ul li a{
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  padding: 8px 15px;
+  padding: 8px 13px;
   transition: all 0.2s ease-in-out;
   border-radius: 25px;
 }
