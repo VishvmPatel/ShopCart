@@ -15,7 +15,12 @@ const Transition = React.forwardRef(function Transition(props, ref){
 const CountryDropdown=()=>{
 
     const [isOpenModel, setisOpenModel] = useState(false);
+    const [selectedTab, setSelectedTab] = useState(null);
     const context = useContext(MyContext);
+    const selectCountry=(index)=>{
+        setSelectedTab(index);
+        setisOpenModel(false);
+    }
     return(
         <>
             <Button className='countryDrop' onClick={()=>setisOpenModel(true)}>
@@ -38,7 +43,9 @@ const CountryDropdown=()=>{
                     {
                         context.countryList?.length!==0 && context.countryList?.map((item,index)=>{
                             return(
-                                <li key={index}><Button onClick={()=>setisOpenModel(false)}>{item.country}</Button></li>
+                                <li key={index}><Button onClick={()=>selectCountry(index)}
+                                    className={`${selectedTab===index ? 'active': ''}`}
+                                >{item.country}</Button></li>
                             )
                         })
                     }
