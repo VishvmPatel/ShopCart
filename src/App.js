@@ -11,6 +11,7 @@ const MyContext = createContext();
 function App() {
 
   const [countryList,setCountryList] = useState([]);
+  const [selectedCountry,setSelectedCountry] = useState('');
 
   useEffect(()=>{
     getCountry("https://countriesnow.space/api/v0.1/countries/");
@@ -23,7 +24,9 @@ function App() {
     })
   }
   const values={
-    countryList
+    countryList,
+    setSelectedCountry,
+    selectedCountry
   }
   return (
     <BrowserRouter>
