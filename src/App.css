@@ -247,3 +247,12 @@ nav .navPart2 ul li a:hover{
   background: #f0faff;
   color: #2bbef9;
 }
+nav .navPart2 ul li{
+  position: relative;
+}
+nav .navPart2 ul li .submenu{
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  min-width: 300px;
+}
