@@ -25,7 +25,6 @@ body{
 }
 .headerWrapper{
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 10px;
 }
 
 .headerWrapper .top-strip{
@@ -225,6 +224,9 @@ nav .allCatTab .icon2 svg{
 nav .navPart2 ul{
   margin-bottom: 0px;
 }
+nav .navPart2 ul li{
+  padding-bottom: 20px;
+}
 nav .navPart2 ul li a{
   text-decoration: none;
 }
@@ -252,7 +254,30 @@ nav .navPart2 ul li{
 }
 nav .navPart2 ul li .submenu{
   position: absolute;
-  top: 100%;
+  top: 150%;
   left: 0px;
-  min-width: 300px;
+  min-width: 200px;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+nav .navPart2 ul li .submenu a{
+  display: block;
+  width: 100%;
+}
+nav .navPart2 ul li .submenu a button{
+  width: 100%;
+  justify-content: flex-start !important;
+  border-radius: 0px !important;
+  text-transform: capitalize !important;
+  font-weight: 600 !important;
+}
+nav .navPart2 ul li .submenu a button:hover{
+  background: #f1f1f1 !important;
+}
+nav .navPart2 ul li:hover .submenu{
+  opacity: 1;
+  visibility: inherit;
+  top: 100%;
 }
