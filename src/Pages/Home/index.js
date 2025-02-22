@@ -1,9 +1,9 @@
+import HomeBanner from "../../Components/HomeBanner";
+
 const Home = ()=>{
     return(
         <>
-            <div className="homeBannerSection">
-                
-            </div>  
+            <HomeBanner/>
         </>
     )
 }
