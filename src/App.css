@@ -219,6 +219,7 @@ nav .navPart1 .catWrapper .sidebarNav{
   padding: 15px 0px;
   transition: all 0.2s;
   visibility: hidden;
+  z-index: 100;
 }
 nav .navPart1 .catWrapper .sidebarNav.open{
   height: auto;
@@ -300,6 +301,7 @@ nav .navPart2 ul li .submenu{
   opacity: 0;
   visibility: hidden;
   transition: all 0.2s ease-in-out;
+  z-index: 100;
 }
 nav .navPart2 ul li .submenu a{
   display: block;
@@ -319,4 +321,30 @@ nav .navPart2 ul li:hover .submenu{
   opacity: 1;
   visibility: inherit;
   top: 100%;
+}
+
+.homeBannerSection{
+  position: relative;
+  overflow: hidden;
+}
+.homeBannerSection *{
+  outline: none !important;
+}
+.homeBannerSection .slick-arrow{
+  position: absolute;
+  top: 45%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px !important;
+  height: 40px !important;
+  background: #444444;
+  border-radius: 100%;
+}
+.homeBannerSection .slick-arrow.slick-next{
+  right: 25px !important;
+}
+.homeBannerSection .slick-arrow.slick-prev{
+  left: 25px !important;
 }
