@@ -341,10 +341,20 @@ nav .navPart2 ul li:hover .submenu{
   height: 40px !important;
   background: #444444;
   border-radius: 100%;
+  font-family: FontAwesome !important;
+  font-weight: bold;
 }
 .homeBannerSection .slick-arrow.slick-next{
   right: 25px !important;
 }
 .homeBannerSection .slick-arrow.slick-prev{
   left: 25px !important;
+}
+.homeBannerSection .slick-arrow.slick-next::before{
+  font-family: FontAwesome !important;
+  color: #fff;
+}
+.homeBannerSection .slick-arrow.slick-prev::before{
+  font-family: FontAwesome !important;
+  color: #fff;
 }

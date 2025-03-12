@@ -8,7 +8,8 @@ const HomeBanner = ()=>{
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true
+        arrows: true,
+        autoplay: true
     };
     return(
         <div className="homeBannerSection">
