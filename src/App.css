@@ -254,13 +254,17 @@ nav .navPart1 .catWrapper .sidebarNav ul li .submenu{
   opacity: 0;
   visibility: hidden;
   transition: all 0.2s ease-in-out;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 nav .navPart1 .catWrapper .sidebarNav ul li:hover .submenu{
   opacity: 1;
   visibility: inherit;
   left: 100%;
+  padding: 20px;
 }
-
+nav .navPart1 .catWrapper .sidebarNav ul li:hover .submenu button{
+  border-radius: 0px !important;
+}
 nav .allCatTab{
   background: #22bef9;
   padding: 10px 15px !important;
