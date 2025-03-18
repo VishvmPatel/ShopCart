@@ -1,5 +1,5 @@
 import HomeBanner from "../../Components/HomeBanner";
-
+import banner1 from '../../assets/images/banner1.jpg'
 const Home = ()=>{
     return(
         <>
@@ -9,7 +9,7 @@ const Home = ()=>{
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3">
-                            <img src="D:\projectecommerce\src\assets\images\banner1.jpg" className="cursor"></img>
+                            <img src={banner1} alt="E-commerce Banner" className="cursor" />
                         </div>
                         <div className="col-md-3">
                         </div>
