@@ -229,13 +229,17 @@ nav .navPart1 .catWrapper .sidebarNav.open{
 nav .navPart1 .catWrapper .sidebarNav ul li{
   width: 100%;
   list-style: none;
-  padding: 0px 15px;
+  padding: 0px 10px;
 }
 nav .navPart1 .catWrapper .sidebarNav ul li button{
   color: #000;
   width: 100%;
   justify-content: flex-start;
   text-transform: capitalize !important;
+}
+nav .navPart1 .catWrapper .sidebarNav ul li button svg{
+  font-size: 12px;
+  opacity: 0.6;
 }
 nav .navPart1 .catWrapper .sidebarNav ul li button:hover{
   background: transparent !important;
@@ -246,7 +250,7 @@ nav .navPart1 .catWrapper .sidebarNav ul li{
 nav .navPart1 .catWrapper .sidebarNav ul li .submenu{
   position: absolute;
   top: 0px;
-  left: 101%;
+  left: 102%;
   width: 250px;
   height: 100%;
   background: #fff;
@@ -255,12 +259,12 @@ nav .navPart1 .catWrapper .sidebarNav ul li .submenu{
   visibility: hidden;
   transition: all 0.2s ease-in-out;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 nav .navPart1 .catWrapper .sidebarNav ul li:hover .submenu{
   opacity: 1;
   visibility: inherit;
   left: 100%;
-  padding: 20px;
 }
 nav .navPart1 .catWrapper .sidebarNav ul li:hover .submenu button{
   border-radius: 0px !important;
