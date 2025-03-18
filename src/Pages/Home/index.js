@@ -9,9 +9,17 @@ const Home = ()=>{
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3">
-                            <img src={banner1} alt="E-commerce Banner" className="cursor" />
+                            <div className="banner">
+                                <img src={banner1} alt="E-commerce Banner" className="cursor" />
+                            </div>
                         </div>
                         <div className="col-md-3">
+                            <div className="d-flex align-items-center">
+                                <div className="info">
+                                    <h3>BEST SELLERS</h3>
+                                    <p className="text-light">Do not miss the current offers untill the end of March.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
