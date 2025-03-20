@@ -18,6 +18,12 @@ body{
 .cursor{
   cursor: pointer;
 }
+.text-light{
+  color: #8b8b8b !important;
+}
+.text-sml{
+  font-size: 12px;
+}
 ::-webkit-scrollbar{
   width: 8px !important;
   height: 8px !important;

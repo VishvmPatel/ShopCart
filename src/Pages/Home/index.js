@@ -15,9 +15,9 @@ const Home = ()=>{
                         </div>
                         <div className="col-md-3">
                             <div className="d-flex align-items-center">
-                                <div className="info">
+                                <div className="info w-75">
                                     <h3>BEST SELLERS</h3>
-                                    <p className="text-light">Do not miss the current offers untill the end of March.</p>
+                                    <p className="text-light text-sml mb-0">Do not miss the current offers untill the end of March.</p>
                                 </div>
                             </div>
                         </div>
