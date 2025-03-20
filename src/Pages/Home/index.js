@@ -2,7 +2,18 @@ import HomeBanner from "../../Components/HomeBanner";
 import banner1 from '../../assets/images/banner1.jpg';
 import Button from '@mui/material/Button';
 import { IoIosArrowRoundForward } from "react-icons/io";
+import React from "react";
+import Slider from "react-slick";
+
 const Home = ()=>{
+
+    var productSliderOptions = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1
+    };
     return(
         <>
             <HomeBanner/>
@@ -23,6 +34,13 @@ const Home = ()=>{
                                 </div>
                                 <Button className="viewAllBtn ml-auto">View All<IoIosArrowRoundForward/></Button>
                             </div>  
+                            <div className="product_row">
+                                <Slider {...productSliderOptions}>
+                                    <div className="item">
+                                        
+                                    </div>
+                                </Slider>  
+                            </div>
                         </div>
                     </div>
                 </div>
