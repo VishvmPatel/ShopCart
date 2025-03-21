@@ -42,143 +42,143 @@ const Home = ()=>{
                                 <Button className="viewAllBtn ml-auto">View All<IoIosArrowRoundForward/></Button>
                             </div>  
                             <div className="product_row w-100 mt-4">
-                            <Swiper slidesPerView={4} spaceBetween={0} pagination={{ clickable: true,}} modules={[Navigation]} className="mySwiper">
-                                <SwiperSlide>
-                                    <div className="item productItem">   
-                                        <div className="imgWrapper">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg" className="w-100" alt="Product item 1" />
-                                        </div> 
-                                        <div className="info">
-                                            <h4>Werther’s Original Caramel Hard Candies</h4>  
-                                            <span className="text-success d-block">In Stock</span>
-                                            <Rating className="mt-2 mb-2" name="read-only" value={5} readOnly size="small" precision={0.5} />
-                                            <div className="d-flex">
-                                                <span className="oldPrice">$20.00</span>
-                                                <span className="netPrice text-danger ml-2">$14.00</span>
+                                <Swiper slidesPerView={4} spaceBetween={0} pagination={{ clickable: true,}} modules={[Navigation]} className="mySwiper">
+                                    <SwiperSlide>
+                                        <div className="item productItem">   
+                                            <div className="imgWrapper">
+                                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg" className="w-100" alt="Product item 1" />
+                                            </div> 
+                                            <div className="info">
+                                                <h4>Werther’s Original Caramel Hard Candies</h4>  
+                                                <span className="text-success d-block">In Stock</span>
+                                                <Rating className="mt-2 mb-2" name="read-only" value={5} readOnly size="small" precision={0.5} />
+                                                <div className="d-flex">
+                                                    <span className="oldPrice">$20.00</span>
+                                                    <span className="netPrice text-danger ml-2">$14.00</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="item productItem">   
-                                        <div className="imgWrapper">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg" className="w-100" alt="Product item 1" />
-                                        </div> 
-                                        <div className="info">
-                                            <h4>Werther’s Original Caramel Hard Candies</h4>  
-                                            <span className="text-success d-block">In Stock</span>
-                                            <Rating className="mt-2 mb-2" name="read-only" value={5} readOnly size="small" precision={0.5} />
-                                            <div className="d-flex">
-                                                <span className="oldPrice">$20.00</span>
-                                                <span className="netPrice text-danger ml-2">$14.00</span>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="item productItem">   
+                                            <div className="imgWrapper">
+                                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg" className="w-100" alt="Product item 1" />
+                                            </div> 
+                                            <div className="info">
+                                                <h4>Werther’s Original Caramel Hard Candies</h4>  
+                                                <span className="text-success d-block">In Stock</span>
+                                                <Rating className="mt-2 mb-2" name="read-only" value={5} readOnly size="small" precision={0.5} />
+                                                <div className="d-flex">
+                                                    <span className="oldPrice">$20.00</span>
+                                                    <span className="netPrice text-danger ml-2">$14.00</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="item productItem">   
-                                        <div className="imgWrapper">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg" className="w-100" alt="Product item 1" />
-                                        </div> 
-                                        <div className="info">
-                                            <h4>Werther’s Original Caramel Hard Candies</h4>  
-                                            <span className="text-success d-block">In Stock</span>
-                                            <Rating className="mt-2 mb-2" name="read-only" value={5} readOnly size="small" precision={0.5} />
-                                            <div className="d-flex">
-                                                <span className="oldPrice">$20.00</span>
-                                                <span className="netPrice text-danger ml-2">$14.00</span>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="item productItem">   
+                                            <div className="imgWrapper">
+                                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg" className="w-100" alt="Product item 1" />
+                                            </div> 
+                                            <div className="info">
+                                                <h4>Werther’s Original Caramel Hard Candies</h4>  
+                                                <span className="text-success d-block">In Stock</span>
+                                                <Rating className="mt-2 mb-2" name="read-only" value={5} readOnly size="small" precision={0.5} />
+                                                <div className="d-flex">
+                                                    <span className="oldPrice">$20.00</span>
+                                                    <span className="netPrice text-danger ml-2">$14.00</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="item productItem">   
-                                        <div className="imgWrapper">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg" className="w-100" alt="Product item 1" />
-                                        </div> 
-                                        <div className="info">
-                                            <h4>Werther’s Original Caramel Hard Candies</h4>  
-                                            <span className="text-success d-block">In Stock</span>
-                                            <Rating className="mt-2 mb-2" name="read-only" value={5} readOnly size="small" precision={0.5} />
-                                            <div className="d-flex">
-                                                <span className="oldPrice">$20.00</span>
-                                                <span className="netPrice text-danger ml-2">$14.00</span>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="item productItem">   
+                                            <div className="imgWrapper">
+                                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg" className="w-100" alt="Product item 1" />
+                                            </div> 
+                                            <div className="info">
+                                                <h4>Werther’s Original Caramel Hard Candies</h4>  
+                                                <span className="text-success d-block">In Stock</span>
+                                                <Rating className="mt-2 mb-2" name="read-only" value={5} readOnly size="small" precision={0.5} />
+                                                <div className="d-flex">
+                                                    <span className="oldPrice">$20.00</span>
+                                                    <span className="netPrice text-danger ml-2">$14.00</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="item productItem">   
-                                        <div className="imgWrapper">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg" className="w-100" alt="Product item 1" />
-                                        </div> 
-                                        <div className="info">
-                                            <h4>Werther’s Original Caramel Hard Candies</h4>  
-                                            <span className="text-success d-block">In Stock</span>
-                                            <Rating className="mt-2 mb-2" name="read-only" value={5} readOnly size="small" precision={0.5} />
-                                            <div className="d-flex">
-                                                <span className="oldPrice">$20.00</span>
-                                                <span className="netPrice text-danger ml-2">$14.00</span>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="item productItem">   
+                                            <div className="imgWrapper">
+                                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg" className="w-100" alt="Product item 1" />
+                                            </div> 
+                                            <div className="info">
+                                                <h4>Werther’s Original Caramel Hard Candies</h4>  
+                                                <span className="text-success d-block">In Stock</span>
+                                                <Rating className="mt-2 mb-2" name="read-only" value={5} readOnly size="small" precision={0.5} />
+                                                <div className="d-flex">
+                                                    <span className="oldPrice">$20.00</span>
+                                                    <span className="netPrice text-danger ml-2">$14.00</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="item productItem">   
-                                        <div className="imgWrapper">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg" className="w-100" alt="Product item 1" />
-                                        </div> 
-                                        <div className="info">
-                                            <h4>Werther’s Original Caramel Hard Candies</h4>  
-                                            <span className="text-success d-block">In Stock</span>
-                                            <Rating className="mt-2 mb-2" name="read-only" value={5} readOnly size="small" precision={0.5} />
-                                            <div className="d-flex">
-                                                <span className="oldPrice">$20.00</span>
-                                                <span className="netPrice text-danger ml-2">$14.00</span>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="item productItem">   
+                                            <div className="imgWrapper">
+                                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg" className="w-100" alt="Product item 1" />
+                                            </div> 
+                                            <div className="info">
+                                                <h4>Werther’s Original Caramel Hard Candies</h4>  
+                                                <span className="text-success d-block">In Stock</span>
+                                                <Rating className="mt-2 mb-2" name="read-only" value={5} readOnly size="small" precision={0.5} />
+                                                <div className="d-flex">
+                                                    <span className="oldPrice">$20.00</span>
+                                                    <span className="netPrice text-danger ml-2">$14.00</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="item productItem">   
-                                        <div className="imgWrapper">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg" className="w-100" alt="Product item 1" />
-                                        </div> 
-                                        <div className="info">
-                                            <h4>Werther’s Original Caramel Hard Candies</h4>  
-                                            <span className="text-success d-block">In Stock</span>
-                                            <Rating className="mt-2 mb-2" name="read-only" value={5} readOnly size="small" precision={0.5} />
-                                            <div className="d-flex">
-                                                <span className="oldPrice">$20.00</span>
-                                                <span className="netPrice text-danger ml-2">$14.00</span>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="item productItem">   
+                                            <div className="imgWrapper">
+                                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg" className="w-100" alt="Product item 1" />
+                                            </div> 
+                                            <div className="info">
+                                                <h4>Werther’s Original Caramel Hard Candies</h4>  
+                                                <span className="text-success d-block">In Stock</span>
+                                                <Rating className="mt-2 mb-2" name="read-only" value={5} readOnly size="small" precision={0.5} />
+                                                <div className="d-flex">
+                                                    <span className="oldPrice">$20.00</span>
+                                                    <span className="netPrice text-danger ml-2">$14.00</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="item productItem">   
-                                        <div className="imgWrapper">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg" className="w-100" alt="Product item 1" />
-                                        </div> 
-                                        <div className="info">
-                                            <h4>Werther’s Original Caramel Hard Candies</h4>  
-                                            <span className="text-success d-block">In Stock</span>
-                                            <Rating className="mt-2 mb-2" name="read-only" value={5} readOnly size="small" precision={0.5} />
-                                            <div className="d-flex">
-                                                <span className="oldPrice">$20.00</span>
-                                                <span className="netPrice text-danger ml-2">$14.00</span>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="item productItem">   
+                                            <div className="imgWrapper">
+                                                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg" className="w-100" alt="Product item 1" />
+                                            </div> 
+                                            <div className="info">
+                                                <h4>Werther’s Original Caramel Hard Candies</h4>  
+                                                <span className="text-success d-block">In Stock</span>
+                                                <Rating className="mt-2 mb-2" name="read-only" value={5} readOnly size="small" precision={0.5} />
+                                                <div className="d-flex">
+                                                    <span className="oldPrice">$20.00</span>
+                                                    <span className="netPrice text-danger ml-2">$14.00</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </SwiperSlide>
-                            </Swiper>  
+                                    </SwiperSlide>
+                                </Swiper>  
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </>
-)
+            </section>
+        </>
+    )
 }
 
 export default Home;
