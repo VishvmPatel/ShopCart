@@ -451,3 +451,12 @@ nav .navPart2 ul li:hover .submenu{
   font-size: 16px;
   font-weight: bold;
 }
+.product_row .item{
+  border-right: 1px solid transparent !important;
+}
+.product_row .swiper-slide:last-child .productItem{
+  border: 1px solid rgba(0,0,0,0.1) !important;
+}
+.swiper{
+  padding-right: 1px !important;
+}

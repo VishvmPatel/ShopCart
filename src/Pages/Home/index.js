@@ -42,7 +42,7 @@ const Home = ()=>{
                                 <Button className="viewAllBtn ml-auto">View All<IoIosArrowRoundForward/></Button>
                             </div>  
                             <div className="product_row w-100 mt-4">
-                            <Swiper slidesPerView={4} spaceBetween={30} pagination={{ clickable: true,}} modules={[Navigation]} className="mySwiper">
+                            <Swiper slidesPerView={4} spaceBetween={0} pagination={{ clickable: true,}} modules={[Navigation]} className="mySwiper">
                                 <SwiperSlide>
                                     <div className="item productItem">   
                                         <div className="imgWrapper">
