@@ -417,6 +417,7 @@ nav .navPart2 ul li:hover .submenu{
   width: 100%;
   height: auto;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 .slick-prev, .slick-next {
   z-index: 100;
@@ -432,4 +433,21 @@ nav .navPart2 ul li:hover .submenu{
 .slick-prev:before, .slick-next:before {
   color: #818181;
   font-size: 24px;
+}
+.productItem h4{
+  font-size: 15px;
+  font-weight: 600;
+}
+.productItem .info{
+  padding: 15px;
+}
+.productItem .info .oldPrice{
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(0, 0,0,0.2);
+  text-decoration: line-through;
+}
+.productItem .info .netPrice{
+  font-size: 16px;
+  font-weight: bold;
 }
