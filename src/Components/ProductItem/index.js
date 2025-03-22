@@ -10,7 +10,7 @@ const ProductItem = () =>{
                                                 <span className="badge badge-primary">28%</span>
                                                 <div className="actions">
                                                     <Button><TfiFullscreen/></Button>
-                                                    <Button><IoMdHeartEmpty/></Button>
+                                                    <Button><IoMdHeartEmpty style={{fontSize:'20px'}}/></Button>
                                                 </div>
                                             </div> 
                                             <div className="info">
