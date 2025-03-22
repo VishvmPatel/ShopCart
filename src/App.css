@@ -418,6 +418,15 @@ nav .navPart2 ul li:hover .submenu{
   height: auto;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  position: relative;
+}
+.productItem .badge{
+  display: inline-block;
+  padding: 7px 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
 }
 .slick-prev, .slick-next {
   z-index: 100;
@@ -459,4 +468,7 @@ nav .navPart2 ul li:hover .submenu{
 }
 .swiper{
   padding-right: 1px !important;
+}
+.badge-primary{
+  background: #2bbef9 !important;
 }
