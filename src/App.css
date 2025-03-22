@@ -472,3 +472,22 @@ nav .navPart2 ul li:hover .submenu{
 .badge-primary{
   background: #2bbef9 !important;
 }
+.productItem .actions{
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  z-index: 100;
+  display: flex;
+}
+.productItem .actions button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px !important;
+  height: 40px !important;
+  width: 40px !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  border-radius: 50% !important;
+  background: #fff !important;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%) !important;
+}

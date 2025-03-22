@@ -1,6 +1,7 @@
 import Rating from '@mui/material/Rating';
 import { TfiFullscreen } from "react-icons/tfi";
 import Button from '@mui/material/Button';
+import { IoMdHeartEmpty } from 'react-icons/io';
 const ProductItem = () =>{
     return(
         <div className="item productItem">   
@@ -8,7 +9,8 @@ const ProductItem = () =>{
                                                 <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg" className="w-100" alt="Product item 1" />
                                                 <span className="badge badge-primary">28%</span>
                                                 <div className="actions">
-                                                    <Button></Button>
+                                                    <Button><TfiFullscreen/></Button>
+                                                    <Button><IoMdHeartEmpty/></Button>
                                                 </div>
                                             </div> 
                                             <div className="info">
