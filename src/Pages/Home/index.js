@@ -1,5 +1,6 @@
 import HomeBanner from "../../Components/HomeBanner";
 import banner1 from '../../assets/images/banner1.jpg';
+import banner2 from '../../assets/images/banner2.jpg';
 import Button from '@mui/material/Button';
 import { IoIosArrowRoundForward } from "react-icons/io";
 import React from "react";
@@ -31,6 +32,9 @@ const Home = ()=>{
                         <div className="col-md-3">
                             <div className="banner">
                                 <img src={banner1} alt="E-commerce Banner" className="cursor w-100 " />
+                            </div>
+                            <div className="banner mt-3">
+                                <img src={banner2} alt="E-commerce Banner" className="cursor w-100 " />
                             </div>
                         </div>
                         <div className="col-md-9 productRow">
