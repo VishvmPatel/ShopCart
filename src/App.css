@@ -377,11 +377,79 @@ nav .navPart2 ul li:hover .submenu{
   justify-content: center;
   width: 40px !important;
   height: 40px !important;
-  background: #444444;
+  background: #000;
   border-radius: 100%;
   font-family: FontAwesome !important;
   font-weight: bold;
 }
+.homeBannerSection {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.bannerSlide {
+  position: relative;
+  width: 100%;
+}
+
+.bannerImage {
+  width: 100%;
+  display: block;
+}
+
+.bannerContent {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: #212121;
+  max-width: 40%;
+}
+
+.offerText {
+  background: #DFF6DD;
+  color: #1D783A;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 1rem;
+  color: #5A5A5A;
+  margin-bottom: 10px;
+}
+
+.priceText {
+  font-size: 1.2rem;
+  color: #FF3B30;
+  font-weight: bold;
+  display: block;  /* Ensures it takes full width and moves button to the next line */
+  margin-bottom: 10px;  /* Adds space between price and button */
+}
+
+.shopButton {
+  background: #1E90FF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.shopButton:hover {
+  background: #007BFF;
+}
+
 .homeBannerSection .slick-arrow.slick-next{
   right: 25px !important;
 }
