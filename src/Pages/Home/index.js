@@ -30,11 +30,24 @@ const Home = ()=>{
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3">
-                            <div className="banner">
-                                <img src={banner1} alt="E-commerce Banner" className="cursor w-100 " />
+                            <div className="banner position-relative">
+                                <img src={banner1} alt="E-commerce Banner" className="cursor w-100" />
+                                <div className="bannerOverlayText banner1Text p-3">
+                                    <p className="smallTitle">Bacola Natural Foods</p>
+                                    <h5 className="mainTitle">Special Organic <br /><strong>Roats Burger</strong></h5>
+                                    <p className="subText">only-from</p>
+                                    <p className="priceText">$14.99</p>
+                                </div>
                             </div>
-                            <div className="banner mt-3">
-                                <img src={banner2} alt="E-commerce Banner" className="cursor w-100 " />
+                            <div className="banner mt-3 position-relative">
+                                <img src={banner2} alt="E-commerce Banner" className="cursor w-100" />
+                                <div className="bannerOverlayText p-3">
+                                    <p className="smallTitle">Best Bakery Products</p>
+                                    <h5 className="mainTitle">Freshest Products <br /><strong>every hour.</strong></h5>
+                                    <p className="subText">only-from</p>
+                                    <p className="priceText">$24.99</p>
+                                    <button className="shopNowBtn">Shop Now →</button>
+                                </div>
                             </div>
                         </div>
                         <div className="col-md-9 productRow">
