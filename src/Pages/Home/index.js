@@ -1,4 +1,5 @@
 import HomeBanner from "../../Components/HomeBanner";
+import HomeCat from "../../Components/HomeCat";
 import banner1 from '../../assets/images/banner1.jpg';
 import banner2 from '../../assets/images/banner2.jpg';
 import Button from '@mui/material/Button';
@@ -25,6 +26,8 @@ const Home = ()=>{
     return(
         <>
             <HomeBanner/>
+
+            <HomeCat/>
 
             <section className="homeProducts">
                 <div className="container">
