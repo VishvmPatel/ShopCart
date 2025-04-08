@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from "swiper/modules";
+import RedApple from '../../assets/images/RedApple.png';
 
 const HomeCat = () => {
 
@@ -39,9 +40,9 @@ const HomeCat = () => {
                         itemBg?.map((item, index) => {
                             return (
                                 <SwiperSlide>
-                                    <div className="item text-center" style={{background:item}}>
+                                    <div className="item text-center" style={{ background: item }}>
                                         <img
-                                            src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-9.png"
+                                            src={RedApple}
                                             alt="Red Apple"
                                         />
                                         <h6>Red Apple</h6>
