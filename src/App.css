@@ -8,6 +8,7 @@ body{
   font-family: "Lato",sans-serif;
   font-size: 14px;
   color: rgba(0,0,0,0.8);
+  overflow-x: hidden;
 }
 
 .bg-blue{background: #233a95;}
@@ -698,4 +699,13 @@ p {
 }
 .homeCat .swiper .item img{
   width: 80%;
+}
+.productRow2{
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.productRow2 .productItem{
+  width: 23%;
+  overflow: hidden;
+  border-right: 1px solid rgba(0, 0, 0, 0.1) !important;
 }

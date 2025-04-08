@@ -2,6 +2,8 @@ import HomeBanner from "../../Components/HomeBanner";
 import HomeCat from "../../Components/HomeCat";
 import banner1 from '../../assets/images/banner1.jpg';
 import banner2 from '../../assets/images/banner2.jpg';
+import banner4 from '../../assets/images/banner4.jpg';
+import banner5 from '../../assets/images/banner5.jpg';
 import Button from '@mui/material/Button';
 import { IoIosArrowRoundForward } from "react-icons/io";
 import React from "react";
@@ -91,27 +93,15 @@ const Home = ()=>{
                                 </div>
                                 <Button className="viewAllBtn ml-auto">View All<IoIosArrowRoundForward/></Button>
                             </div>  
-                            <div className="product_row w-100 mt-4">
-                                <Swiper slidesPerView={4} spaceBetween={0} pagination={{ clickable: true,}} modules={[Navigation]} className="mySwiper">
-                                    <SwiperSlide>
-                                        <ProductItem/>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <ProductItem/>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <ProductItem/>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <ProductItem/>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <ProductItem/>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <ProductItem/>
-                                    </SwiperSlide>
-                                </Swiper>  
+                            <div className="product_row productRow2 w-100 mt-4 d-flex">
+                                <ProductItem />
+                                <ProductItem />
+                                <ProductItem />
+                                <ProductItem />
+                                <ProductItem />
+                                <ProductItem />
+                                <ProductItem />
+                                <ProductItem />
                             </div>
                         </div>
                     </div>
