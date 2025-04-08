@@ -30,6 +30,7 @@ const HomeCat = () => {
     return (
         <section className="homeCat">
             <div className="container">
+                <h3 className="mb-4 hd">Featured Categories</h3>
                 <Swiper
                     slidesPerView={10}
                     spaceBetween={8}
@@ -40,7 +41,7 @@ const HomeCat = () => {
                         itemBg?.map((item, index) => {
                             return (
                                 <SwiperSlide>
-                                    <div className="item text-center" style={{ background: item }}>
+                                    <div className="item text-center cursor" style={{ background: item }}>
                                         <img
                                             src={RedApple}
                                             alt="Red Apple"

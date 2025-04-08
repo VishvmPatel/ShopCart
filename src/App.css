@@ -563,9 +563,10 @@ p {
   border-radius: 7px;
   overflow: hidden;
 }
-.productRow .hd{
+.hd{
   font-size: 20px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 .viewAllBtn{
   padding: 5px 25px !important;
