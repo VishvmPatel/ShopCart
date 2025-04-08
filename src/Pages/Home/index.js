@@ -12,10 +12,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import 'swiper/css';
 import 'swiper/css/navigation';
-import {Navigation} from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import ProductItem from "../../Components/ProductItem";
 
-const Home = ()=>{
+const Home = () => {
 
     var productSliderOptions = {
         dots: true,
@@ -25,11 +25,11 @@ const Home = ()=>{
         slidesToScroll: 1,
         arrows: true,
     };
-    return(
+    return (
         <>
-            <HomeBanner/>
+            <HomeBanner />
 
-            <HomeCat/>
+            <HomeCat />
 
             <section className="homeProducts">
                 <div className="container">
@@ -54,6 +54,7 @@ const Home = ()=>{
                                     <button className="shopNowBtn">Shop Now →</button>
                                 </div>
                             </div>
+
                         </div>
                         <div className="col-md-9 productRow">
                             <div className="d-flex align-items-center">
@@ -61,29 +62,29 @@ const Home = ()=>{
                                     <h3 className="mb-0 hd">BEST SELLERS</h3>
                                     <p className="text-light text-sml mb-0">Do not miss the current offers untill the end of March.</p>
                                 </div>
-                                <Button className="viewAllBtn ml-auto">View All<IoIosArrowRoundForward/></Button>
-                            </div>  
+                                <Button className="viewAllBtn ml-auto">View All<IoIosArrowRoundForward /></Button>
+                            </div>
                             <div className="product_row w-100 mt-4">
-                                <Swiper slidesPerView={4} spaceBetween={0} pagination={{ clickable: true,}} modules={[Navigation]} className="mySwiper">
+                                <Swiper slidesPerView={4} spaceBetween={0} pagination={{ clickable: true, }} modules={[Navigation]} className="mySwiper">
                                     <SwiperSlide>
-                                        <ProductItem/>
+                                        <ProductItem />
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <ProductItem/>
+                                        <ProductItem />
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <ProductItem/>
+                                        <ProductItem />
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <ProductItem/>
+                                        <ProductItem />
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <ProductItem/>
+                                        <ProductItem />
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <ProductItem/>
+                                        <ProductItem />
                                     </SwiperSlide>
-                                </Swiper>  
+                                </Swiper>
                             </div>
 
                             <div className="d-flex align-items-center mt-5">
@@ -91,8 +92,8 @@ const Home = ()=>{
                                     <h3 className="mb-0 hd">NEW PRODUCTS</h3>
                                     <p className="text-light text-sml mb-0">New products with updated stocks.</p>
                                 </div>
-                                <Button className="viewAllBtn ml-auto">View All<IoIosArrowRoundForward/></Button>
-                            </div>  
+                                <Button className="viewAllBtn ml-auto">View All<IoIosArrowRoundForward /></Button>
+                            </div>
                             <div className="product_row productRow2 w-100 mt-4 d-flex">
                                 <ProductItem />
                                 <ProductItem />
@@ -102,6 +103,15 @@ const Home = ()=>{
                                 <ProductItem />
                                 <ProductItem />
                                 <ProductItem />
+                            </div>
+
+                            <div className="d-flex mt-4 mb-5 bannerSec">
+                                <div className="banner">
+                                    <img src={banner4} alt="E-commerce Banner" />
+                                </div>
+                                <div className="banner">
+                                    <img src={banner5} alt="E-commerce Banner" />
+                                </div>
                             </div>
                         </div>
                     </div>
