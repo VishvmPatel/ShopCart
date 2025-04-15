@@ -28,33 +28,33 @@ const Home = () => {
     return (
         <>
             <HomeBanner />
-
             <HomeCat />
 
             <section className="homeProducts">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3">
-                            <div className="banner position-relative">
-                                <img src={banner1} alt="E-commerce Banner" className="cursor w-100" />
-                                <div className="bannerOverlayText banner1Text p-3">
-                                    <p className="smallTitle">Bacola Natural Foods</p>
-                                    <h5 className="mainTitle">Special Organic <br /><strong>Roats Burger</strong></h5>
-                                    <p className="subText">only-from</p>
-                                    <p className="priceText">$14.99</p>
+                            <div className="sticky">
+                                <div className="banner position-relative">
+                                    <img src={banner1} alt="E-commerce Banner" className="cursor w-100" />
+                                    <div className="bannerOverlayText banner1Text p-3">
+                                        <p className="smallTitle">Bacola Natural Foods</p>
+                                        <h5 className="mainTitle">Special Organic <br /><strong>Roats Burger</strong></h5>
+                                        <p className="subText">only-from</p>
+                                        <p className="priceText">$14.99</p>
+                                    </div>
+                                </div>
+                                <div className="banner mt-3 position-relative">
+                                    <img src={banner2} alt="E-commerce Banner" className="cursor w-100" />
+                                    <div className="bannerOverlayText p-3">
+                                        <p className="smallTitle">Best Bakery Products</p>
+                                        <h5 className="mainTitle">Freshest Products <br /><strong>every hour.</strong></h5>
+                                        <p className="subText">only-from</p>
+                                        <p className="priceText">$24.99</p>
+                                        <button className="shopNowBtn">Shop Now →</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="banner mt-3 position-relative">
-                                <img src={banner2} alt="E-commerce Banner" className="cursor w-100" />
-                                <div className="bannerOverlayText p-3">
-                                    <p className="smallTitle">Best Bakery Products</p>
-                                    <h5 className="mainTitle">Freshest Products <br /><strong>every hour.</strong></h5>
-                                    <p className="subText">only-from</p>
-                                    <p className="priceText">$24.99</p>
-                                    <button className="shopNowBtn">Shop Now →</button>
-                                </div>
-                            </div>
-
                         </div>
                         <div className="col-md-9 productRow">
                             <div className="d-flex align-items-center">
@@ -166,6 +166,21 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="newsLetterSection mt-3 mb-3 d-flex align-items-center">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <p className="text-white mt-1">$20 discount for your first order</p>
+                            <h3 className="text-white">Join our newsletter and get...</h3>
+                            <p className="text-light">Join our email subscription now to get updates on promotions and coupons.</p>
+                        </div>
+
+                        <div className="col-md-6">
                         </div>
                     </div>
                 </div>
