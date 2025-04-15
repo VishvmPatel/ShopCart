@@ -4,6 +4,7 @@ import banner1 from '../../assets/images/banner1.jpg';
 import banner2 from '../../assets/images/banner2.jpg';
 import banner4 from '../../assets/images/banner4.jpg';
 import banner5 from '../../assets/images/banner5.jpg';
+import newsLetterImg from '../../assets/images/coupon.png';
 import Button from '@mui/material/Button';
 import { IoIosArrowRoundForward } from "react-icons/io";
 import React from "react";
@@ -177,10 +178,11 @@ const Home = () => {
                         <div className="col-md-6">
                             <p className="text-white mt-1">$20 discount for your first order</p>
                             <h3 className="text-white">Join our newsletter and get...</h3>
-                            <p className="text-light">Join our email subscription now to get updates on promotions and coupons.</p>
+                            <p className="text-light">Join our email subscription now to get updates on<br/> promotions and coupons.</p>
                         </div>
 
                         <div className="col-md-6">
+                            <img src={newsLetterImg}/>
                         </div>
                     </div>
                 </div>

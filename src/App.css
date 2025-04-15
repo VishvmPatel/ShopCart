@@ -724,7 +724,14 @@ p {
 }
 .newsLetterSection p{
   font-size: 18px;
+  margin: 10px 0px !important;
 }
 .newsLetterSection h3{
-  font-size: 30px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.newsLetterSection p.text-light{
+  color: #fff !important;
+  opacity: 0.5;
+  font-size: 15px;
 }
