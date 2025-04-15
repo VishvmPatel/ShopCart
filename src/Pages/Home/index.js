@@ -105,12 +105,65 @@ const Home = () => {
                                 <ProductItem />
                             </div>
 
-                            <div className="d-flex mt-4 mb-5 bannerSec">
-                                <div className="banner">
-                                    <img src={banner4} alt="E-commerce Banner" />
+                            <div className="d-flex mt-4 mb-5 bannerSec gap-3">
+                                {/* Banner 4 */}
+                                <div className="position-relative w-50 overflow-hidden rounded-3">
+                                    <img src={banner4} alt="Dairy & Eggs" className="img-fluid w-100" />
+                                    <div
+                                        style={{
+                                            position: 'absolute',
+                                            top: '20%',
+                                            left: '10%',
+                                            zIndex: 2,
+                                            color: '#000'
+                                        }}
+                                    >
+                                        <p style={{ color: 'green', fontWeight: '600', marginBottom: '5px' }}>WEEKEND DISCOUNT 40%</p>
+                                        <h4 style={{ fontWeight: '700', marginBottom: '5px' }}>Dairy & Eggs</h4>
+                                        <p style={{ color: '#666', marginBottom: '10px' }}>A different kind of grocery store</p>
+                                        <button style={{
+                                            padding: '5px 15px',
+                                            background: '#007bff',
+                                            color: '#fff',
+                                            border: 'none',
+                                            borderRadius: '4px',
+                                            fontWeight: '500',
+                                            fontSize: '14px',
+                                            boxShadow: '0 1px 3px rgba(0,0,0,0.1)'
+                                        }}>
+                                            Shop Now
+                                        </button>
+                                    </div>
                                 </div>
-                                <div className="banner">
-                                    <img src={banner5} alt="E-commerce Banner" />
+
+                                {/* Banner 5 */}
+                                <div className="position-relative w-50 overflow-hidden rounded-3">
+                                    <img src={banner5} alt="Legumes & Cereals" className="img-fluid w-100" />
+                                    <div
+                                        style={{
+                                            position: 'absolute',
+                                            top: '20%',
+                                            left: '10%',
+                                            zIndex: 2,
+                                            color: '#000'
+                                        }}
+                                    >
+                                        <p style={{ color: 'green', fontWeight: '600', marginBottom: '5px' }}>WEEKEND DISCOUNT 40%</p>
+                                        <h4 style={{ fontWeight: '700', marginBottom: '5px' }}>Legumes & Cereals</h4>
+                                        <p style={{ color: '#666', marginBottom: '10px' }}>Feed your family the best</p>
+                                        <button style={{
+                                            padding: '5px 15px',
+                                            background: '#007bff',
+                                            color: '#fff',
+                                            border: 'none',
+                                            borderRadius: '4px',
+                                            fontWeight: '500',
+                                            fontSize: '14px',
+                                            boxShadow: '0 1px 3px rgba(0,0,0,0.1)'
+                                        }}>
+                                            Shop Now
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
