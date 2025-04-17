@@ -17,7 +17,6 @@ import { Navigation } from 'swiper/modules';
 import ProductItem from "../../Components/ProductItem";
 
 const Home = () => {
-
     var productSliderOptions = {
         dots: true,
         infinite: false,
