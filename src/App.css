@@ -781,3 +781,10 @@ p {
   text-transform: capitalize !important;
   font-weight: 600 !important;
 }
+footer{
+  width: 100%;
+  height: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 35px 0px;
+}
