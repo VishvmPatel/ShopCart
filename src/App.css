@@ -807,3 +807,17 @@ footer .topInfo .col span{
   font-size: 14px;
   font-weight: 600;
 }
+footer .linksWrap h5{
+  font-size: 20px;
+}
+footer .linksWrap ul li{
+  list-style: none;
+  margin-bottom: 10px;
+}
+footer .linksWrap ul li a{
+  color: #000;
+  font-size: 14px;
+}
+footer ,.linksWrap ul li a:hover{
+  text-decoration: none;
+}
