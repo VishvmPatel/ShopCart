@@ -3,6 +3,7 @@ import { TbTruckDelivery } from "react-icons/tb";
 import { TbDiscount } from "react-icons/tb";
 import { CiBadgeDollar } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = ()=>{
     return(
@@ -31,7 +32,7 @@ const Footer = ()=>{
 
                 </div>
 
-                <div className="row mt-4 linksWrap">
+                <div className="row mt-5 linksWrap">
                     <div className="col">
                         <h5>FRUIT & VEGETABLES</h5>
                         <ul>
@@ -92,6 +93,21 @@ const Footer = ()=>{
                             <li><Link to='#'>Party Trays</Link></li>
                         </ul>
                     </div>
+                </div>
+
+                <div className="copyright mt-3 pt-3 pb-3 d-flex">
+                    <p className="mb-0">Copyright 2025 © ShopCart. All rights reserved.</p>
+                    <ul className="list list-inline ml-auto mb-0">
+                        <li className="list-inline-item">
+                            <Link to="#"><FaFacebookF/></Link>
+                        </li>
+                        <li className="list-inline-item">
+                            <Link to="#"><FaTwitter/></Link>
+                        </li>
+                        <li className="list-inline-item">
+                            <Link to="#"><FaInstagram/></Link>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </footer>
