@@ -364,7 +364,9 @@ nav .navPart2 ul li:hover .submenu{
 
 .homeBannerSection{
   position: relative;
-  overflow: hidden;
+}
+.homeBannerSection .swiper{
+  overflow: inherit !important;
 }
 .homeBannerSection *{
   outline: none !important;

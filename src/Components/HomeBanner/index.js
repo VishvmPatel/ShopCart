@@ -48,21 +48,23 @@ const HomeBanner = () => {
     };
 
     return (
-        <div className="homeBannerSection">
-            <Slider {...settings}>
-                {banners.map((banner, index) => (
-                    <div className="bannerSlide" key={index}>
-                        <img src={banner.img} className="bannerImage" alt={banner.title} />
-                        <div className="bannerContent">
-                            <span className="offerText">{banner.discount}</span>
-                            <h2>{banner.title}</h2>
-                            <p>Only this week. Don’t miss...</p>
-                            <span className="priceText">from <strong>{banner.price}</strong></span>
-                            <button className="shopButton">{banner.btnText} →</button>
+        <div className="container mt-3">
+            <div className="homeBannerSection">
+                <Slider {...settings}>
+                    {banners.map((banner, index) => (
+                        <div className="bannerSlide" key={index}>
+                            <img src={banner.img} className="bannerImage" alt={banner.title} />
+                            <div className="bannerContent">
+                                <span className="offerText">{banner.discount}</span>
+                                <h2>{banner.title}</h2>
+                                <p>Only this week. Don’t miss...</p>
+                                <span className="priceText">from <strong>{banner.price}</strong></span>
+                                <button className="shopButton">{banner.btnText} →</button>
+                            </div>
                         </div>
-                    </div>
-                ))}
-            </Slider>
+                    ))}
+                </Slider>
+            </div>
         </div>
     );
 };
