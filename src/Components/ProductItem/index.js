@@ -3,7 +3,14 @@ import { TfiFullscreen } from "react-icons/tfi";
 import Button from '@mui/material/Button';
 import { IoMdHeartEmpty } from 'react-icons/io';
 import ProductModal from '../ProductModal';
+import { useState } from 'react';
 const ProductItem = () =>{
+
+    const [isOpenProductModal, setisOpenProductModal] = useState(false);
+
+    const viewProductDetails=(id)=>{
+        setisOpenProductModal(true);
+    }
     return(
         <>
             <div className="item productItem">
@@ -11,7 +18,7 @@ const ProductItem = () =>{
                     <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg" className="w-100" alt="Product item 1" />
                     <span className="badge badge-primary">28%</span>
                     <div className="actions">
-                        <Button><TfiFullscreen /></Button>
+                        <Button onClick={()=>viewProductDetails(1)}><TfiFullscreen /></Button>
                         <Button><IoMdHeartEmpty style={{ fontSize: '20px' }} /></Button>
                     </div>
                 </div>
@@ -25,7 +32,10 @@ const ProductItem = () =>{
                     </div>
                 </div>
             </div>
-            <ProductModal/>
+
+            {
+                isOpenProductModal===true && <ProductModal/>
+            }
         </>
     )
 }
