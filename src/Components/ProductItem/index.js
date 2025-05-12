@@ -11,6 +11,10 @@ const ProductItem = () =>{
     const viewProductDetails=(id)=>{
         setisOpenProductModal(true);
     }
+
+    const closeProductModal = () =>{
+        setisOpenProductModal(false);
+    }
     return(
         <>
             <div className="item productItem">
@@ -34,7 +38,7 @@ const ProductItem = () =>{
             </div>
 
             {
-                isOpenProductModal===true && <ProductModal/>
+                isOpenProductModal===true && <ProductModal closeProductModal={closeProductModal}/>
             }
         </>
     )
