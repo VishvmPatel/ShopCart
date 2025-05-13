@@ -848,7 +848,7 @@ footer .copyright ul li a:hover svg{
 .productModal .MuiPaper-elevation{
   padding: 25px;
   position: relative;
-  max-width: 1000px !important;
+  max-width: 900px !important;
   width: 900px !important;
 }
 .productModal h4{
