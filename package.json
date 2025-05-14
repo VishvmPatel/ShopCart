@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "16": "^0.0.2",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^6.4.3",
@@ -10,13 +11,14 @@
     "@mui/styled-engine-sc": "^6.4.3",
     "@testing-library/react": "^16.2.0",
     "axios": "^1.7.9",
-    "bootstrap": "^4.1.3",
+    "bootstrap": "^5.3.6",
     "cra-template": "1.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.4.0",
+    "react-inner-image-zoom": "^4.0.1",
     "react-router-dom": "^7.1.5",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.15",
@@ -49,6 +51,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@babel/plugin-transform-private-property-in-object": "^7.25.9"
+    "@babel/plugin-transform-private-property-in-object": "^7.25.9",
+    "@types/react-inner-image-zoom": "^3.0.3"
   }
 }
