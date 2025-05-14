@@ -37,31 +37,53 @@ body{
 ::-webkit-scrollbar-track{
   background: transparent !important;
 }
-.headerWrapper{
+.headerWrapper {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.headerWrapper .top-strip{
-  padding: 8px 0px;
+.headerWrapper .top-strip {
+  padding: 8px 0;
 }
-.headerWrapper .top-strip p{
+
+.headerWrapper .top-strip p {
   color: #fff;
   font-size: 12px;
   font-weight: 700;
+  margin: 0;
 }
 
-.headerWrapper .header{
+.headerWrapper .header {
   width: 100%;
-  height: auto;
-  padding: 25px 0px;
-  padding-right: 185px;
-  padding-left: 185px; 
-}
-.logoWrapper img{
-  width: 100%;
+  padding: 18px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
 }
 
-.headerWrapper .header .part2 .countryDrop{
+.logoWrapper {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.logoWrapper img {
+  height: 45px; /* smaller, cleaner logo size */
+  width: auto;
+  max-width: none;
+}
+
+.headerWrapper .header .part2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.headerWrapper .header .part2 .countryDrop {
   width: 170px;
   height: 60px;
   min-width: 170px;
@@ -69,71 +91,88 @@ body{
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
   border-radius: 7px !important;
   padding: 10px 15px !important;
+  text-align: left;
+  justify-content: flex-start !important;
+  flex-shrink: 0;
+  background: #fff;
 }
-.headerWrapper .header .part2 .countryDrop{
-  text-align:left;
-  justify-content:flex-start !important;
-}
-.headerWrapper .header .part2 .countryDrop .label{
-  font-size: 12px !important; 
-  text-transform: capitalize !important; 
-  color: rgba(0, 0,0,0.4) !important;
+
+.headerWrapper .header .part2 .countryDrop .label {
+  font-size: 12px !important;
+  text-transform: capitalize !important;
+  color: #000 !important; /* changed back to black */
   line-height: 16px;
 }
-.headerWrapper .header .part2 .countryDrop .name{
-  font-size: 14px !important; 
-  text-transform: capitalize !important; 
+
+.headerWrapper .header .part2 .countryDrop .name {
+  font-size: 14px !important;
+  text-transform: capitalize !important;
   color: #233a95 !important;
   font-weight: 700;
   line-height: 16px;
 }
-.headerWrapper .header .part2 .countryDrop span.ml-auto svg{
+
+.headerWrapper .header .part2 .countryDrop span.ml-auto svg {
   opacity: 0.7;
 }
 
-.headerSearch{
-  width: 60%; 
-  height: 60px; 
-  background:#f3f4f7 ; 
+.headerSearch {
+  flex: 1;
+  min-width: 0;
+  height: 60px;
+  background: #f3f4f7;
   padding: 5px;
   position: relative;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.headerSearch input{
-  background: transparent !important; 
-  outline: none !important; 
-  font-size: 18px; color: rgba(0,0, 0,0.7);
-  width: 100%; 
+
+.headerSearch input {
+  background: transparent !important;
+  outline: none !important;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.7);
+  width: 100%;
   height: 45px;
-  border: 0px !important;
-  padding: 0px 20px !important;
+  border: 0 !important;
+  padding: 0 20px !important;
 }
-.headerSearch input::-webkit-input-placeholder{
-  color: rgba(0,0, 0,0.6);
+
+.headerSearch input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
 }
-.headerSearch button{
+
+.headerSearch button {
   position: absolute;
   top: 10px;
-  right: 10px; 
+  right: 10px;
   z-index: 100;
   min-width: 40px !important;
-  height: 40px !important; 
+  height: 40px !important;
   width: 40px !important;
   border-radius: 50% !important;
   color: #000;
 }
-.headerSearch button svg{
+
+.headerSearch button svg {
   font-size: 25px;
   opacity: 0.8;
 }
 
+header .part3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
 header .part3 .circle {
+  display: flex;
   align-items: center;
   justify-content: center;
   min-width: 45px !important;
   width: 45px !important;
-  height: 45px !important; 
+  height: 45px !important;
   border-radius: 50% !important;
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
   color: #000;
@@ -143,27 +182,43 @@ header .part3 .circle svg {
   font-size: 22px;
 }
 
-.cartTab .price{
-  font-size: 18px;
-  color: rgba(0,0,0,0.8);
-  font-weight: 700;
+.cartTab {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 5px;
 }
-.cartTab button{
+
+.cartTab .price {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+  margin: 0;
+}
+
+.cartTab button {
   background: #fff1ee !important;
 }
-.cartTab button svg{
+
+.cartTab button svg {
   color: #ea2b0f !important;
 }
-.cartTab .count{
+
+.cartTab .count {
   position: absolute;
   top: -6px;
-  right:-4px;
+  right: -4px;
   background: #ea2b0f;
   border-radius: 50%;
   color: #fff;
   width: 20px;
   height: 20px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
 }
+
 
 .locationModel .MuiPaper-elevation{
   padding: 25px;
@@ -852,5 +907,6 @@ footer .copyright ul li a:hover svg{
   width: 900px !important;
 }
 .productModal h4{
-  font-size: 22px !important;
+  font-size: 20px !important;
+  color: rgba(0,0, 0,0.8) !important;
 }

@@ -4,7 +4,7 @@ import { TbDiscount } from "react-icons/tb";
 import { CiBadgeDollar } from "react-icons/ci";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
-
+import React from 'react';
 const Footer = ()=>{
     return(
         <footer>
