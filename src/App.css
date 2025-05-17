@@ -18,6 +18,10 @@ body{
     max-width: 1200px;
   }
 }
+.badge.bg-success{
+  background: #e5f8ed !important;
+  color: #16b858 !important;
+}
 .cursor{
   cursor: pointer;
 }
@@ -679,9 +683,15 @@ p {
   color: rgba(0, 0,0,0.2);
   text-decoration: line-through;
 }
+.info .oldPrice.lg{
+  font-size: 20px;
+}
 .info .netPrice{
   font-size: 16px;
   font-weight: bold;
+}
+.info .netPrice.lg{
+  font-size: 20px;
 }
 .product_row .item{
   border-right: 1px solid transparent !important;
@@ -914,4 +924,36 @@ footer .copyright ul li a:hover svg{
 .productModal h4{
   font-size: 20px !important;
   color: rgba(0,0, 0,0.8) !important;
+}
+.productZoom{
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.zoomSliderBig{
+  width: 100% impr !important;
+}
+.zoomSlider{
+  padding-top: 30px;
+}
+.zoomSlider .slick-slide{
+  padding-right: 20px !important;
+}
+.zoomSlider *{
+  outline: none !important;
+}
+.zoomSlider .item{
+  border: 2px solid transparent !important;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.zoomSlider .slick-current .item{
+  border: 2px solid #3bb77e !important;
+}
+.zoomSlider .slick-arrow{
+  top: 55% !important;
+  zoom: 80% !important;
 }
