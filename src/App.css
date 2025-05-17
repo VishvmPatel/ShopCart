@@ -18,9 +18,26 @@ body{
     max-width: 1200px;
   }
 }
+.badge{
+  display: inline-block;
+  padding: 7px 10px;
+}
 .badge.bg-success{
   background: #e5f8ed !important;
   color: #16b858 !important;
+}
+.btn-blue{
+  background: #233a95 !important;
+  color: #fff !important;
+  text-transform: capitalize !important;
+}
+.btn-big{
+  font-size: 15px !important;
+  padding: 7px 30px !important;
+  min-width: auto !important;
+}
+.btn-round{
+  border-radius: 30px !important;
 }
 .cursor{
   cursor: pointer;
@@ -956,4 +973,32 @@ footer .copyright ul li a:hover svg{
 .zoomSlider .slick-arrow{
   top: 55% !important;
   zoom: 80% !important;
+}
+.zoomSlider .slick-arrow.slick-next{
+  right: -2% !important;
+}
+.zoomSlider .slick-arrow.slick-prev{
+  left: -5% !important;
+}
+.quantityDrop{
+  width: 150px;
+  gap: 20px;
+}
+.quantityDrop button{
+  min-width: 40px !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  background: #edeef5 !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  color: #000;
+}
+.quantityDrop button svg{
+  color: #000 !important;
+}
+.quantityDrop input{
+  width: 30px;
+  border: 0px;
+  background: transparent;
+  outline: none !important;
 }

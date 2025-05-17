@@ -9,6 +9,8 @@ import productImage3 from "../../assets/images/product-image3-35.jpg";
 import { useRef } from 'react';
 import InnerImageZoom from 'react-inner-image-zoom';
 import 'react-inner-image-zoom/lib/styles.min.css';
+import { FaMinus } from "react-icons/fa6";
+import { FaPlus } from 'react-icons/fa6';
 
 const ProductModal = (props)=>{
 
@@ -80,11 +82,20 @@ const ProductModal = (props)=>{
                         </Slider>
                     </div>
                     <div className='col-md-7'>
-                        <div className='d-flex info align-items-center'>
+                        <div className='d-flex info align-items-center mb-4'>
                             <span className='oldPrice lg mr-2'>$9.35</span>
                             <span className='netPrice text-danger lg'>$7.25</span>
                         </div>
                         <span className='badge bg-success'>IN STOCK</span>
+                        <p className='mt-3'>Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent</p>
+                        <div className='d-flex align-items-center'>
+                            <div className='quantityDrop d-flex align-items-center'>
+                                <Button><FaMinus/></Button>
+                                <input type='text'/>
+                                <Button><FaPlus/></Button>
+                            </div>
+                            <Button className='btn-blue btn-lg btn-big btn-round ml-3'>Add to Cart</Button>
+                        </div>
                     </div>
                 </div>
                 
