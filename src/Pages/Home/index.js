@@ -18,14 +18,6 @@ import ProductItem from "../../Components/ProductItem";
 import { IoMailOutline } from "react-icons/io5";
 
 const Home = () => {
-    var productSliderOptions = {
-        dots: true,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        arrows: true,
-    };
     return (
         <>
             <HomeBanner />
@@ -178,26 +170,23 @@ const Home = () => {
                         <div className="col-md-6">
                             <p className="text-white mt-1">$20 discount for your first order</p>
                             <h3 className="text-white">Join our newsletter and get...</h3>
-                            <p className="text-light">Join our email subscription now to get updates on<br/> promotions and coupons.</p>
-
+                            <p className="text-light">Join our email subscription now to get updates on<br /> promotions and coupons.</p>
 
                             <form>
-                                <IoMailOutline/>
-                                <input type="text" placeholder="Your Email Address"/>
+                                <IoMailOutline />
+                                <input type="text" placeholder="Your Email Address" />
                                 <Button>Subscribe</Button>
                             </form>
                         </div>
 
                         <div className="col-md-6">
-                            <img src={newsLetterImg}/>
+                            <img src={newsLetterImg} alt="Newsletter Coupon" />
                         </div>
                     </div>
                 </div>
             </section>
-
-            
         </>
-    )
-}
+    );
+};
 
 export default Home;
