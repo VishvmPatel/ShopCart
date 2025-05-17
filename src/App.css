@@ -982,7 +982,7 @@ footer .copyright ul li a:hover svg{
 }
 .quantityDrop{
   width: 150px;
-  gap: 20px;
+  gap: 10px;
 }
 .quantityDrop button{
   min-width: 40px !important;
