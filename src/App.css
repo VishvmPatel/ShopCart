@@ -22,6 +22,9 @@ body{
   display: inline-block;
   padding: 7px 10px;
 }
+button{
+  text-transform: capitalize !important;
+}
 .badge.bg-success{
   background: #e5f8ed !important;
   color: #16b858 !important;

@@ -10,6 +10,7 @@ import { useRef } from 'react';
 import InnerImageZoom from 'react-inner-image-zoom';
 import 'react-inner-image-zoom/lib/styles.min.css';
 import QuantityBox from '../QuantityBox';
+import { IoIosHeartEmpty } from 'react-icons/io';
 
 const ProductModal = (props)=>{
 
@@ -90,6 +91,9 @@ const ProductModal = (props)=>{
                         <div className='d-flex align-items-center'>
                             <QuantityBox/>
                             <Button className='btn-blue btn-lg btn-big btn-round ml-3'>Add to Cart</Button>
+                        </div>
+                        <div className='d-flex align-items-center mt-3'>
+                            <Button className='btn-round' variant='outlined'><IoIosHeartEmpty/> &nbsp; ADD TO WISHLIST</Button>
                         </div>
                     </div>
                 </div>
