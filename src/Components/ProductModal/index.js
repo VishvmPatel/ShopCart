@@ -1,5 +1,5 @@
 import Dialog from '@mui/material/Dialog';
-import { MdClose } from 'react-icons/md';
+import { MdClose, MdOutlineCompareArrows } from 'react-icons/md';
 import Button from '@mui/material/Button';
 import { Rating } from '@mui/material';
 import Slider from 'react-slick';
@@ -92,8 +92,11 @@ const ProductModal = (props)=>{
                             <QuantityBox/>
                             <Button className='btn-blue btn-lg btn-big btn-round ml-3'>Add to Cart</Button>
                         </div>
-                        <div className='d-flex align-items-center mt-3'>
-                            <Button className='btn-round' variant='outlined'><IoIosHeartEmpty/> &nbsp; ADD TO WISHLIST</Button>
+                        <div className='d-flex align-items-center mt-4 actions'>
+                            <Button className='btn-round btn-sml' variant='outlined'><IoIosHeartEmpty/> &nbsp; ADD TO WISHLIST</Button>
+                        </div>
+                        <div className='d-flex align-items-center mt-4 actions'>
+                            <Button className='btn-round btn-sml' variant='outlined'><MdOutlineCompareArrows/> &nbsp; COMPARE</Button>
                         </div>
                     </div>
                 </div>

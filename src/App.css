@@ -42,6 +42,14 @@ button{
 .btn-round{
   border-radius: 30px !important;
 }
+.btn-sml{
+  font-size: 12px !important;
+  color: #000;
+  text-transform: capitalize !important;
+}
+.btn-sml svg{
+  font-size: 20px;
+}
 .cursor{
   cursor: pointer;
 }
@@ -1006,4 +1014,12 @@ footer .copyright ul li a:hover svg{
   background: transparent;
   outline: none !important;
   text-align: center;
+}
+.productModal .actions button{
+  color: #000 !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  font-size: 10px !important;
+}
+.productModal .actions button svg{
+  font-size: 15px !important;
 }
