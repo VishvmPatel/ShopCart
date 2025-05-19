@@ -1106,7 +1106,14 @@ footer .copyright ul li a:hover svg{
   font-size: 15px;
   font-weight: 500;
 }
-
 .filterBox .MuiSlider-root {
   margin-top: 10px;
+}
+.range-slider .range-slider__thumb{
+  background: #6d4aae !important;
+  width: 15px !important;
+  height: 15px !important;
+}
+.range-slider .range-slider__range{
+  background: #6d4aae !important;
 }
