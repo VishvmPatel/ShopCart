@@ -961,6 +961,12 @@ footer .copyright ul li a:hover svg{
   overflow: hidden;
   border-radius: 15px;
 }
+.productZoom .badge{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+}
 .zoomSliderBig{
   width: 100% impr !important;
 }

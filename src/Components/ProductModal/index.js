@@ -6,16 +6,19 @@ import Slider from 'react-slick';
 import productImage1 from "../../assets/images/product-image-62.jpg";
 import productImage2 from "../../assets/images/product-image2-47.jpg";
 import productImage3 from "../../assets/images/product-image3-35.jpg";
-import { useRef } from 'react';
+import { useContext, useRef } from 'react';
 import InnerImageZoom from 'react-inner-image-zoom';
 import 'react-inner-image-zoom/lib/styles.min.css';
 import QuantityBox from '../QuantityBox';
 import { IoIosHeartEmpty } from 'react-icons/io';
+import { MyContext } from '../../App';
 
 const ProductModal = (props)=>{
 
     const zoomSliderBig = useRef();
     const zoomSlider = useRef();
+
+    const context = useContext(MyContext);
     var settings = {
         dots:false,
         infinite: false,
@@ -41,8 +44,8 @@ const ProductModal = (props)=>{
     }
     return(
         <>
-            <Dialog open={true} className='productModal' onClose={()=>props.closeProductModal()}>
-                <Button className='close_' onClick={()=>props.closeProductModal()}><MdClose /></Button>
+            <Dialog open={true} className='productModal' onClose={()=> context.setisOpenProductModal(false)}>
+                <Button className='close_' onClick={()=> context.setisOpenProductModal(false)}><MdClose /></Button>
                 <h4 class = "mb-1 font-weight-bold">All Natural Italian-Style Chicken Meatballs</h4>
                 <div className='d-flex align-items-center'>
                     <div className='d-flex align-items-center mr-4'>
@@ -56,7 +59,8 @@ const ProductModal = (props)=>{
 
                 <div className='row mt-2 productDetailModal'>
                     <div className='col-md-5'>
-                        <div className='productZoom'>
+                        <div className='productZoom position-relative'>
+                            <div className='badge badge-primary'>23%</div>
                             <Slider {...settings2} className='zoomSliderBig' ref={zoomSliderBig}>
                                 <div className='item'>
                                     <InnerImageZoom src={productImage1} zoomType="hover" zoomScale={1} />
@@ -92,11 +96,9 @@ const ProductModal = (props)=>{
                             <QuantityBox/>
                             <Button className='btn-blue btn-lg btn-big btn-round ml-3'>Add to Cart</Button>
                         </div>
-                        <div className='d-flex align-items-center mt-4 actions'>
+                        <div className='d-flex align-items-center mt-5 actions'>
                             <Button className='btn-round btn-sml' variant='outlined'><IoIosHeartEmpty/> &nbsp; ADD TO WISHLIST</Button>
-                        </div>
-                        <div className='d-flex align-items-center mt-4 actions'>
-                            <Button className='btn-round btn-sml' variant='outlined'><MdOutlineCompareArrows/> &nbsp; COMPARE</Button>
+                            <Button className='btn-round btn-sml ms-3' variant='outlined'><MdOutlineCompareArrows/> &nbsp; COMPARE</Button>
                         </div>
                     </div>
                 </div>
