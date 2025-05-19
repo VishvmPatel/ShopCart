@@ -15,9 +15,14 @@ const Sidebar = () =>{
                             <FormControlLabel className="w-100" control={<CheckBox />} label="Men" />
                         </li>
                         <li>
-                            <FormControlLabel className="w-100" control={<CheckBox />} label="Men" />
+                            <FormControlLabel className="w-100" control={<CheckBox />} label="Women" />
                         </li>
-                    
+                        <li>
+                            <FormControlLabel className="w-100" control={<CheckBox />} label="Beauty" />
+                        </li>
+                        <li>
+                            <FormControlLabel className="w-100" control={<CheckBox />} label="Kids" />
+                        </li>
                     </ul>
                 </div>
             </div>

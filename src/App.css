@@ -1033,6 +1033,9 @@ footer .copyright ul li a:hover svg{
 .productModal .actions button svg{
   font-size: 15px !important;
 }
+.productModal .actions button:hover{
+  background: #f1f1f1;
+}
 .product_Listing_Page{
   padding: 35px 0px;
 }
@@ -1047,6 +1050,22 @@ footer .copyright ul li a:hover svg{
   font-weight: 700;
   font-size: 14px;
 }
+.sidebar .MuiFormControlLabel-label {
+  margin-left: 4px;
+}
+.sidebar .scroll ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+.sidebar .scroll li {
+  margin-bottom: 10px; 
+}
+.sidebar .MuiFormControlLabel-root {
+  margin-left: 0; 
+  padding-left: 0;
+  align-items: flex-start;
+}
 .product_Listing_Page .productListing .sidebar .scroll ul li{
   list-style: none;
   margin-bottom: 0px;
@@ -1057,6 +1076,10 @@ footer .copyright ul li a:hover svg{
 }
 .css-rizt0-MuiTypography-root{
   font-size: 13px !important;
+}
+.css-1umw9bq-MuiSvgIcon-root{
+  width: 20px !important;
+  height: 20px !important;
 }
 .product_Listing_Page .productListing .content_right{
   width: 80%;
