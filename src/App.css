@@ -11,7 +11,7 @@ body{
   overflow-x: hidden;
 }
 
-.bg-blue{background: #233a95;}
+.bg-blue{background: #6d4aae;}
 
 @media(min-width: 1300px){
   .container, .container-lg, .container-md, .container-sm, .container-xl{
@@ -30,7 +30,7 @@ button{
   color: #16b858 !important;
 }
 .btn-blue{
-  background: #233a95 !important;
+  background: #6d4aae !important;
   color: #fff !important;
   text-transform: capitalize !important;
 }
@@ -126,7 +126,7 @@ button{
   text-align: left;
   justify-content: flex-start !important;
   flex-shrink: 0;
-  background: #fff;
+  background: #f1f1f1;
 }
 
 .headerWrapper .header .part2 .countryDrop .label {
@@ -339,6 +339,10 @@ nav .navPart1 .catWrapper .sidebarNav ul li button svg{
 }
 nav .navPart1 .catWrapper .sidebarNav ul li button:hover{
   background: transparent !important;
+  color: #7a55c1 !important;
+}
+nav .navPart1 .catWrapper .sidebarNav ul li:hover button:first-child{
+  color: #7a55c1 !important;
 }
 nav .navPart1 .catWrapper .sidebarNav ul li{
   position: static;
@@ -366,7 +370,7 @@ nav .navPart1 .catWrapper .sidebarNav ul li:hover .submenu button{
   border-radius: 0px !important;
 }
 nav .allCatTab{
-  background: #22bef9;
+  background: #6d4aae;
   padding: 10px 15px !important;
   border-radius: 30px !important;
 }
@@ -374,7 +378,7 @@ nav .allCatTab *{
   color: #fff;
 }
 nav .allCatTab:hover{
-  background: #22bef9;
+  background: #7a55c1;
 }
 nav .allCatTab .text{
   font-weight: 600;
@@ -411,7 +415,7 @@ nav .navPart2 ul li a svg{
 }
 nav .navPart2 ul li a:hover{
   background: #f0faff;
-  color: #2bbef9;
+  color: #7a55c1;
 }
 nav .navPart2 ul li{
   position: relative;
@@ -764,7 +768,7 @@ p {
   font-size: 15px;
 }
 .productItem .actions button:hover{
-  background: #233a95 !important;
+  background: #6d4aae !important;
 }
 .productItem .actions button:hover svg{
   color: #fff !important;
@@ -814,17 +818,20 @@ p {
 .newsLetterSection{
   width: 100%;
   height: auto;
-  background: #233a95;
+  background-image: linear-gradient(to bottom right, #4a2888, #7a55c1);
   position: relative;
   overflow: hidden;
-  padding: 70px 0px;
+  padding: 60px 0px;
+}
+.newsLetterSection .col-md-6{
+  position: static !important;
 }
 .newsLetterSection p{
   font-size: 18px;
   margin: 10px 0px !important;
 }
 .newsLetterSection h3{
-  font-size: 35px;
+  font-size: 32px;
   font-weight: bold;
 }
 .newsLetterSection p.text-light{
@@ -836,9 +843,6 @@ p {
   position: absolute;
   bottom: 0px;
   right: 0px;
-}
-.newsLetterSection .col-md-6{
-  position: static !important;
 }
 .newsLetterSection form{
   width: 100%;
@@ -868,7 +872,7 @@ p {
   position: absolute;
   top: 6px;
   right: 7px;
-  background: #233a95 !important;
+  background: #6d4aae !important;
   font-size: 14px !important;
   padding: 12px 25px !important;
   color: #fff !important;
@@ -936,10 +940,10 @@ footer .copyright ul li a{
 }
 footer .copyright ul li a svg{
   font-size: 16px;
-  color: rgba(0,0,0,0.8);
+  color: #7a55c1;
 }
 footer .copyright ul li a:hover{
-  background: #2bbef9 !important;
+  background: #6d4aae !important;
 }
 footer .copyright ul li a:hover svg{
   color: #fff !important;
