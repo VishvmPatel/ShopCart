@@ -35,7 +35,6 @@ const Listing = () => {
                             <div className="showBy mt-3 mb-3 d-flex align-items-center">
                                 <div className="d-flex align-items-center btnWrapper">
                                     <Button onClick={()=>setProductView('one')}><IoIosMenu /></Button>
-                                    <Button onClick={()=>setProductView('two')}><HiViewGrid /></Button>
                                     <Button onClick={()=>setProductView('three')}><CgMenuGridR /></Button>
                                     <Button onClick={()=>setProductView('four')}><TfiLayoutGrid4Alt /></Button>
                                 </div>
