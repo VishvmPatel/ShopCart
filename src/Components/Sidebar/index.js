@@ -115,9 +115,9 @@ const Sidebar = () => {
                     </div>
                 </div>
 
-                <br/>
+                <br />
 
-                <Link to="#"><img src={gif1} className="w-100"/></Link>
+                <Link to="#"><img src={gif1} className="w-100" /></Link>
             </div>
         </>
     )

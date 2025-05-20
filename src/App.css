@@ -1067,6 +1067,11 @@ footer .copyright ul li a:hover svg{
   width: 20%;
   flex: 0 0 20%;
 }
+/*
+.product_Listing_Page .productListing .sidebar .sticky{
+  position: sticky;
+  top: 20px;
+}*/
 .product_Listing_Page .productListing .sidebar .filterBox{
   margin-bottom: 35px;
 }
@@ -1167,7 +1172,10 @@ footer .copyright ul li a:hover svg{
 .product_Listing_Page .productListing .content_right .showBy .btnWrapper button svg{
   color: #000;
   font-size: 18px !important;
-  opacity: 0.5;
+  opacity: 0.3;
+}
+.product_Listing_Page .productListing .content_right .showBy .btnWrapper button.act svg{
+  opacity: 1 !important;
 }
 .product_Listing_Page .productListing .content_right .showBy .btnWrapper button:hover svg{
   opacity: 1;
@@ -1180,6 +1188,9 @@ footer .copyright ul li a:hover svg{
   color: #000;
   opacity: 0.6;
   margin-left: 5px;
+}
+.showByFilter button.act svg{
+  opacity: 1 !important;
 }
 .showPerPageDropdown .MuiPaper-root{
   width: 80px !important;
@@ -1208,7 +1219,7 @@ footer .copyright ul li a:hover svg{
   border-radius: 8px;
 }
 .productListing .productItem.one .imgWrapper {
-  width: 30%;
+  width: 25%;
   max-width: 200px;
   position: relative;
   flex-shrink: 0;
