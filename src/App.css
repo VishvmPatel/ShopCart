@@ -744,16 +744,20 @@ p {
 .badge-primary{
   background: #2bbef9 !important;
 }
+
+/* Modified action buttons styles */
 .productItem .actions{
   position: absolute;
   top: 20px;
-  right: -100%;
+  right: -100%;  /* Start off-screen */
   z-index: 1000;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;  /* Start invisible */
 }
+
 .productItem .actions button{
   display: flex;
   align-items: center;
@@ -765,7 +769,7 @@ p {
   border-radius: 50% !important;
   background: #fff !important;
   box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%) !important;
-  transition: all 0.0s !important;
+  transition: all 0.2s !important;
 }
 .productItem .actions button svg{
   color: #000 !important;
@@ -781,20 +785,27 @@ p {
 }
 .productItem .imgWrapper{
   overflow: hidden;
+  position: relative;
 }
 .productItem .imgWrapper img{
   transition: all 0.3s ease-in-out;
 }
+
+/* Show actions on hover */
 .productItem .imgWrapper:hover .actions{
   opacity: 1;
   right: 10px;
 }
+
 .productItem .imgWrapper:hover img{
   transform: scale(1.1);
 }
+
+/* Modal open state */
 body.modal-open .productItem .actions {
   right: 10px;
   opacity: 1;
+  overflow: hidden;
 }
 .homeCat{
   padding: 35px 0px;
@@ -1136,8 +1147,8 @@ footer .copyright ul li a:hover svg{
   background: #6d4aae !important;
 }
 .product_Listing_Page .productListing .content_right{
-  width: 80%;
-  flex: 0 0 80%;
+  width: 78%;
+  flex: 0 0 78%;
   padding-left: 50px;
 }
 .product_Listing_Page .productListing .content_right .showBy{
@@ -1172,4 +1183,12 @@ footer .copyright ul li a:hover svg{
 }
 .showPerPageDropdown .MuiPaper-root{
   width: 80px !important;
+}
+.productListing{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.productListing .productItem.four{
+  width: 23%;
 }

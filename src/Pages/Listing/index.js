@@ -13,6 +13,7 @@ import ProductItem from "../../Components/ProductItem/index.js";
 
 const Listing = () => {
     const [anchorEl , setAnchorEl] = useState(null);
+    const [productView, setProductView] = useState('four');
     const openDropDown = Boolean(anchorEl);
     const handleClick = (event) =>{
         setAnchorEl(event.currentTarget);
@@ -33,10 +34,10 @@ const Listing = () => {
 
                             <div className="showBy mt-3 mb-3 d-flex align-items-center">
                                 <div className="d-flex align-items-center btnWrapper">
-                                    <Button><IoIosMenu /></Button>
-                                    <Button><HiViewGrid /></Button>
-                                    <Button><TfiLayoutGrid4Alt /></Button>
-                                    <Button><CgMenuGridR /></Button>
+                                    <Button onClick={()=>setProductView('one')}><IoIosMenu /></Button>
+                                    <Button onClick={()=>setProductView('two')}><HiViewGrid /></Button>
+                                    <Button onClick={()=>setProductView('three')}><CgMenuGridR /></Button>
+                                    <Button onClick={()=>setProductView('four')}><TfiLayoutGrid4Alt /></Button>
                                 </div>
 
                                 <div className="showByFilter" style={{ marginLeft: 'auto' }}>
@@ -60,7 +61,14 @@ const Listing = () => {
                             </div>
 
                             <div className="productListing">
-                                <ProductItem/>
+                                <ProductItem itemView={productView}/>
+                                <ProductItem itemView={productView}/>
+                                <ProductItem itemView={productView}/>
+                                <ProductItem itemView={productView}/>
+                                <ProductItem itemView={productView}/>
+                                <ProductItem itemView={productView}/>
+                                <ProductItem itemView={productView}/>
+                                <ProductItem itemView={productView}/>
                             </div>
 
                         </div>
