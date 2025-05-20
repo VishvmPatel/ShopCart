@@ -9,6 +9,7 @@ import {FaAngleDown} from "react-icons/fa6";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { useState } from "react";
+import ProductItem from "../../Components/ProductItem/index.js";
 
 const Listing = () => {
     const [anchorEl , setAnchorEl] = useState(null);
@@ -41,6 +42,7 @@ const Listing = () => {
                                 <div className="showByFilter" style={{ marginLeft: 'auto' }}>
                                     <Button onClick={handleClick}>Show 9 <FaAngleDown /></Button>
                                     <Menu
+                                        className="w-100 showPerPageDropdown"
                                         id="basic-menu"
                                         anchorEl={anchorEl}
                                         open={openDropDown}
@@ -52,8 +54,13 @@ const Listing = () => {
                                         <MenuItem onClick={handleClose}>30</MenuItem>
                                         <MenuItem onClick={handleClose}>40</MenuItem>
                                         <MenuItem onClick={handleClose}>50</MenuItem>
+                                        <MenuItem onClick={handleClose}>60</MenuItem>
                                     </Menu>
                                 </div>
+                            </div>
+
+                            <div className="productListing">
+                                <ProductItem/>
                             </div>
 
                         </div>

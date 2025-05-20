@@ -8,9 +8,11 @@ const ProductItem = () =>{
 
     const context = useContext(MyContext);
 
-    const viewProductDetails=(id)=>{
+    const viewProductDetails = (id) => {
         context.setisOpenProductModal(true);
-    }
+        document.body.classList.add("modal-open");
+    };
+
 
     return(
         <>

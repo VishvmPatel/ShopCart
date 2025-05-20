@@ -14,11 +14,17 @@ import { IoIosHeartEmpty } from 'react-icons/io';
 import { MyContext } from '../../App';
 
 const ProductModal = (props)=>{
-
+    
     const zoomSliderBig = useRef();
     const zoomSlider = useRef();
 
     const context = useContext(MyContext);
+    const handleClose = () => {
+        context.setisOpenProductModal(false);
+        document.body.classList.remove("modal-open");
+    };
+
+
     var settings = {
         dots:false,
         infinite: false,
@@ -44,9 +50,9 @@ const ProductModal = (props)=>{
     }
     return(
         <>
-            <Dialog open={true} className='productModal' onClose={()=> context.setisOpenProductModal(false)}>
-                <Button className='close_' onClick={()=> context.setisOpenProductModal(false)}><MdClose /></Button>
-                <h4 class = "mb-1 font-weight-bold">All Natural Italian-Style Chicken Meatballs</h4>
+            <Dialog open={true} className='productModal' onClose={handleClose}>
+                <Button className='close_' onClick={handleClose}><MdClose /></Button>
+                <h4 class="mb-1 font-weight-bold">All Natural Italian-Style Chicken Meatballs</h4>
                 <div className='d-flex align-items-center'>
                     <div className='d-flex align-items-center mr-4'>
                         <span>Brands:</span>

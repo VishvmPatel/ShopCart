@@ -678,6 +678,12 @@ p {
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   position: relative;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  pointer-events: auto !important;
+  transform: none !important;
+  z-index: auto !important;
 }
 .productItem .badge{
   display: inline-block;
@@ -785,6 +791,10 @@ p {
 }
 .productItem .imgWrapper:hover img{
   transform: scale(1.1);
+}
+body.modal-open .productItem .actions {
+  right: 10px;
+  opacity: 1;
 }
 .homeCat{
   padding: 35px 0px;
@@ -1159,4 +1169,7 @@ footer .copyright ul li a:hover svg{
   color: #000;
   opacity: 0.6;
   margin-left: 5px;
+}
+.showPerPageDropdown .MuiPaper-root{
+  width: 80px !important;
 }
