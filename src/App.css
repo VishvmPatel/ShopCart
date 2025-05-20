@@ -1037,7 +1037,7 @@ footer .copyright ul li a:hover svg{
   background: #f1f1f1;
 }
 .product_Listing_Page{
-  padding: 35px 0px;
+  padding: 45px 0px;
 }
 .product_Listing_Page .productListing{
   gap: 20px;
@@ -1104,6 +1104,7 @@ footer .copyright ul li a:hover svg{
 .product_Listing_Page .productListing .content_right{
   width: 80%;
   flex: 0 0 80%;
+  padding-left: 50px;
 }
 .priceRange {
   font-size: 15px;

@@ -1,4 +1,5 @@
 import Sidebar from "../../Components/Sidebar";
+import content1 from"../../assets/images/content1.jpg";
 
 const Listing = () => {
     return(
@@ -9,7 +10,7 @@ const Listing = () => {
                         <Sidebar/>
 
                         <div className="content_right">
-                            content_right
+                            <img src={content1} className="w-100" style={{borderRadius:'8px'}}/>
                         </div>
                     </div>
                 </div>
