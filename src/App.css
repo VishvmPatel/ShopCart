@@ -1080,6 +1080,9 @@ footer .copyright ul li a:hover svg{
   padding-left: 0;
   align-items: flex-start;
 }
+.product_Listing_Page .productListing .sidebar .scroll ul{
+  margin-bottom: 0px;
+}
 .product_Listing_Page .productListing .sidebar .scroll ul li{
   list-style: none;
   margin-bottom: 0px;
@@ -1108,6 +1111,10 @@ footer .copyright ul li a:hover svg{
 }
 .filterBox .MuiSlider-root {
   margin-top: 10px;
+}
+.range-slider{
+  height: 5px !important;
+
 }
 .range-slider .range-slider__thumb{
   background: #6d4aae !important;

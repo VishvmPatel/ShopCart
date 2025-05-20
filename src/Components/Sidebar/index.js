@@ -4,6 +4,8 @@ import CheckBox from "@mui/material/Checkbox";
 import RangeSlider from 'react-range-slider-input';
 import 'react-range-slider-input/dist/style.css';
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import gif1 from "../../assets/images/sidebar-banner.gif";
 
 const Sidebar = () => {
     const [value, setValue] = useState([100, 60000]);
@@ -68,14 +70,54 @@ const Sidebar = () => {
 
                     <div className="d-flex justify-content-between align-items-center priceRange mt-2 px-1">
                         <span>
-                            <strong>Min:</strong> <span className="text-success">Rs: {value[0]}</span>
+                            <strong>Min:</strong> <span className="text-success text-dark">Rs: {value[0]}</span>
                         </span>
                         <span>
-                            <strong>Max:</strong> <span className="text-success">Rs: {value[1]}</span>
+                            <strong>Max:</strong> <span className="text-success text-dark">Rs: {value[1]}</span>
                         </span>
                     </div>
                 </div>
+                <div className="filterBox">
+                    <h6>PRODUCT STATUS</h6>
 
+                    <div className="scroll">
+                        <ul>
+                            <li>
+                                <FormControlLabel className="w-100" control={<CheckBox />} label="In Stock" />
+                            </li>
+                            <li>
+                                <FormControlLabel className="w-100" control={<CheckBox />} label="On Sale" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="filterBox">
+                    <h6>BRANDS</h6>
+
+                    <div className="scroll">
+                        <ul>
+                            <li>
+                                <FormControlLabel className="w-100" control={<CheckBox />} label="Frito Lay" />
+                            </li>
+                            <li>
+                                <FormControlLabel className="w-100" control={<CheckBox />} label="Nespresso" />
+                            </li>
+                            <li>
+                                <FormControlLabel className="w-100" control={<CheckBox />} label="Oreo" />
+                            </li>
+                            <li>
+                                <FormControlLabel className="w-100" control={<CheckBox />} label="Quaker" />
+                            </li>
+                            <li>
+                                <FormControlLabel className="w-100" control={<CheckBox />} label="Welch's" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <br/>
+
+                <Link to="#"><img src={gif1} className="w-100"/></Link>
             </div>
         </>
     )
