@@ -1,5 +1,8 @@
 import ProductZoom from "../../Components/ProductZoom";
 import Rating from "@mui/material/Rating";
+import QuantityBox from "../../Components/QuantityBox";
+import Button from "@mui/material/Button";
+import { BsCartFill } from "react-icons/bs";
 
 const ProductDetails = () =>{
     return (
@@ -7,11 +10,11 @@ const ProductDetails = () =>{
             <section className="productDetails section">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-5">
+                        <div className="col-md-4 pl-5">
                             <ProductZoom/>
                         </div>
 
-                        <div className="col-md-7">
+                        <div className="col-md-7 pl-5 pr-5">
                             <h2 className="hd text-capitalize">All Natural Italian-Style Chicken Meatballs</h2>
                             <ul className="list list-inline d-flex align-items-center">
                                 <li className="list-inline-item">
@@ -32,6 +35,18 @@ const ProductDetails = () =>{
                                 <span class="netPrice text-danger ml-2">$14.00</span>
                             </div>
                             <span className="badge badge-success product-badge">IN STOCK</span>
+                            <p className="mt-3">Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent
+                                Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent
+                            </p>
+                            
+                            <div className="d-flex align-items-center">
+                                <span>Size / Weight:</span>
+                            </div>
+                            
+                            <div className="d-flex align-items-center mt-4">
+                                <QuantityBox/>
+                                <Button className="btn-blue btn-lg btn-big btn-round"><BsCartFill/> &nbsp; Add to cart</Button>
+                            </div>
                         </div>
                     </div>
                 </div>
