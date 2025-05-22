@@ -27,11 +27,11 @@ const ProductDetails = () =>{
                                     </div>
                                 </li>
                             </ul>
-                            <div class="d-flex info">
+                            <div class="d-flex info mb-3">
                                 <span class="oldPrice">$20.00</span>
                                 <span class="netPrice text-danger ml-2">$14.00</span>
                             </div>
-                            <span className="badge badge-success">IN STOCK</span>
+                            <span className="badge badge-success product-badge">IN STOCK</span>
                         </div>
                     </div>
                 </div>

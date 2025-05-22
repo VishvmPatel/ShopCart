@@ -1284,3 +1284,13 @@ footer .copyright ul li a:hover svg{
 .productDetails .netPrice{
   font-size: 22px;
 }
+.product-badge {
+  background-color: #e5f8ed !important;
+  color: #16b858 !important;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 6px 12px;
+  display: inline-block;
+  margin-top: 10px;
+}
