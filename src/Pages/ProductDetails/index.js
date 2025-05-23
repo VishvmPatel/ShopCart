@@ -3,8 +3,13 @@ import Rating from "@mui/material/Rating";
 import QuantityBox from "../../Components/QuantityBox";
 import Button from "@mui/material/Button";
 import { BsCartFill } from "react-icons/bs";
+import { useState } from "react";
 
 const ProductDetails = () =>{
+    const [activeSize, setActiveSize] = useState(null);
+    const isActive = (index) => {
+        setActiveSize(index);
+    }
     return (
         <>
             <section className="productDetails section">
@@ -39,8 +44,15 @@ const ProductDetails = () =>{
                                 Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent
                             </p>
                             
-                            <div className="d-flex align-items-center">
-                                <span>Size / Weight:</span>
+                            <div className="productSize d-flex align-items-center">
+                                <span>Size / Weight: </span>
+                                <ul className="list list-inline mb-0 pl-4">
+                                    <li className="list-inline-item"><a className={`tag ${activeSize === 0 ? 'active' : ''}`}>50g </a></li>
+                                    <li className="list-inline-item"><a className={`tag ${activeSize === 1 ? 'active' : ''}`}>100g </a></li>
+                                    <li className="list-inline-item"><a className={`tag ${activeSize === 2 ? 'active' : ''}`}>200g </a></li>
+                                    <li className="list-inline-item"><a className={`tag ${activeSize === 3 ? 'active' : ''}`}>300g </a></li>
+                                    <li className="list-inline-item"><a className={`tag ${activeSize === 4 ? 'active' : ''}`}>500g </a></li>
+                                </ul>
                             </div>
                             
                             <div className="d-flex align-items-center mt-4">

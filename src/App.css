@@ -1294,3 +1294,31 @@ footer .copyright ul li a:hover svg{
   display: inline-block;
   margin-top: 10px;
 }
+.productSize{
+  width: 100%;
+  height: auto;
+  padding: 25px 0px;
+}
+.productSize ul li{
+  margin-right: 10px !important;
+}
+.productSize ul li a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px !important;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 5px !important;
+  cursor: pointer;
+  text-decoration: none !important;
+  color: #000;
+  font-size: 16px !important;
+  transition: all 0.1s ease-in-out;
+}
+.productSize ul li a.active{
+  background: #3bb77e !important;
+  color: #fff !important;
+}
+.productSize span {
+  margin-right: 12px;
+}
