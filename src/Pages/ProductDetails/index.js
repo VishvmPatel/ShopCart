@@ -47,17 +47,18 @@ const ProductDetails = () =>{
                             <div className="productSize d-flex align-items-center">
                                 <span>Size / Weight: </span>
                                 <ul className="list list-inline mb-0 pl-4">
-                                    <li className="list-inline-item"><a className={`tag ${activeSize === 0 ? 'active' : ''}`}>50g </a></li>
-                                    <li className="list-inline-item"><a className={`tag ${activeSize === 1 ? 'active' : ''}`}>100g </a></li>
-                                    <li className="list-inline-item"><a className={`tag ${activeSize === 2 ? 'active' : ''}`}>200g </a></li>
-                                    <li className="list-inline-item"><a className={`tag ${activeSize === 3 ? 'active' : ''}`}>300g </a></li>
-                                    <li className="list-inline-item"><a className={`tag ${activeSize === 4 ? 'active' : ''}`}>500g </a></li>
+                                    <li className="list-inline-item"><a className={`tag ${activeSize === 0 ? 'active' : ''}`} onClick={() => isActive(0)}>50g </a></li>
+                                    <li className="list-inline-item"><a className={`tag ${activeSize === 1 ? 'active' : ''}`} onClick={() => isActive(1)}>100g </a></li>
+                                    <li className="list-inline-item"><a className={`tag ${activeSize === 2 ? 'active' : ''}`} onClick={() => isActive(2)}>200g </a></li>
+                                    <li className="list-inline-item"><a className={`tag ${activeSize === 3 ? 'active' : ''}`} onClick={() => isActive(3)}>300g </a></li>
+                                    <li className="list-inline-item"><a className={`tag ${activeSize === 4 ? 'active' : ''}`} onClick={() => isActive(4)}>500g </a></li>
                                 </ul>
                             </div>
                             
-                            <div className="d-flex align-items-center mt-4">
+                            <div className="d-flex align-items-center mt-3">
                                 <QuantityBox/>
                                 <Button className="btn-blue btn-lg btn-big btn-round"><BsCartFill/> &nbsp; Add to cart</Button>
+                                <Button className="btn-blue btn-lg btn-big btn-circle"><BsCartFill/></Button>
                             </div>
                         </div>
                     </div>
