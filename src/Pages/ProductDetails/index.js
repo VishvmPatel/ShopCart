@@ -4,8 +4,10 @@ import QuantityBox from "../../Components/QuantityBox";
 import Button from "@mui/material/Button";
 import { BsCartFill } from "react-icons/bs";
 import { useState } from "react";
+import { FaRegHeart } from "react-icons/fa";
+import { MdOutlineCompareArrows } from "react-icons/md";
 
-const ProductDetails = () =>{
+const ProductDetails = () => {
     const [activeSize, setActiveSize] = useState(null);
     const isActive = (index) => {
         setActiveSize(index);
@@ -35,9 +37,9 @@ const ProductDetails = () =>{
                                     </div>
                                 </li>
                             </ul>
-                            <div class="d-flex info mb-3">
-                                <span class="oldPrice">$20.00</span>
-                                <span class="netPrice text-danger ml-2">$14.00</span>
+                            <div className="d-flex info mb-3">
+                                <span className="oldPrice">$20.00</span>
+                                <span className="netPrice text-danger ml-2">$14.00</span>
                             </div>
                             <span className="badge badge-success product-badge">IN STOCK</span>
                             <p className="mt-3">Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent
@@ -55,10 +57,17 @@ const ProductDetails = () =>{
                                 </ul>
                             </div>
                             
-                            <div className="d-flex align-items-center mt-3">
+                            <div className="d-flex align-items-center mt-3" style={{gap: '15px'}}>
                                 <QuantityBox/>
-                                <Button className="btn-blue btn-lg btn-big btn-round"><BsCartFill/> &nbsp; Add to cart</Button>
-                                <Button className="btn-blue btn-lg btn-big btn-circle"><BsCartFill/></Button>
+                                <Button className="btn-blue btn-lg btn-big btn-round">
+                                    <BsCartFill/> &nbsp; Add to cart
+                                </Button>
+                                <Button className="btn-blue btn-lg btn-big btn-circle">
+                                    <FaRegHeart/>
+                                </Button>
+                                <Button className="btn-blue btn-lg btn-big btn-circle">
+                                    <MdOutlineCompareArrows/>
+                                </Button>
                             </div>
                         </div>
                     </div>
