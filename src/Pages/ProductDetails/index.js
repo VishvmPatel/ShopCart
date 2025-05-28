@@ -6,9 +6,11 @@ import { BsCartFill } from "react-icons/bs";
 import { useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
 import { MdOutlineCompareArrows } from "react-icons/md";
+import Tooltip from "@mui/material/Tooltip";
 
 const ProductDetails = () => {
     const [activeSize, setActiveSize] = useState(null);
+    const [activeTabs, setActiveTabs] = useState(0);
     const isActive = (index) => {
         setActiveSize(index);
     }
@@ -62,13 +64,108 @@ const ProductDetails = () => {
                                 <Button className="btn-blue btn-lg btn-big btn-round">
                                     <BsCartFill/> &nbsp; Add to cart
                                 </Button>
-                                <Button className="btn-blue btn-lg btn-big btn-circle">
-                                    <FaRegHeart/>
-                                </Button>
-                                <Button className="btn-blue btn-lg btn-big btn-circle">
-                                    <MdOutlineCompareArrows/>
-                                </Button>
+
+                                <Tooltip title="Add to Wishlist" placement="top">
+                                    <Button className="btn-blue btn-lg btn-big btn-circle">
+                                        <FaRegHeart />
+                                    </Button>
+                                </Tooltip>
+
+                                <Tooltip title="Compare" placement="top">
+                                    <Button className="btn-blue btn-lg btn-big btn-circle ml-2">
+                                        <MdOutlineCompareArrows />
+                                    </Button>
+                                </Tooltip>
                             </div>
+                        </div>
+                    </div>
+
+                    <br/>
+
+                    <div className="card mt-5 p-5 detailsPageTabs">
+                        <div className="customTabs">
+                            <ul className="list list-inline">
+                                <li className="list-inline-item">
+                                    <Button className={`${activeTabs === 0 && 'active'}`}
+                                        onClick={() => {
+                                            setActiveTabs(0)
+                                        }}
+                                    >Description</Button>
+                                </li>
+                                <li className="list-inline-item">
+                                    <Button className={`${activeTabs === 1 && 'active'}`}
+                                        onClick={() => {
+                                            setActiveTabs(1)
+                                        }}
+                                    >Additional Info</Button>
+                                </li>
+                                <li className="list-list-inline">
+                                    <Button className={`${activeTabs === 2 && 'active'}`}
+                                        onClick={() => {
+                                            setActiveTabs(2)
+                                            showReviews()
+                                        }}
+                                    >Reviews (3)</Button>
+                                </li>
+                            </ul>
+                            
+                            <br/>
+
+                            {
+                                activeTabs === 0 &&
+                                <div className="tabContent">
+                                    <p>{currentProduct.description}</p>
+                                </div>
+                            }
+
+                            {
+                                activeTabs === 1 &&
+
+                                <div className="tabContent">
+                                    <div className="table-responsive">
+                                        <table className="table table-bordered">
+                                            <tbody>
+                                                <tr class="stnd-up">
+                                                    <th>Stand Up</th>
+                                                    <td>
+                                                        <p>35"L x 24"W x 37-45"H(front to back wheel)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="folded-wo-wheels">
+                                                    <th>Folded (w/o wheels)</th>
+                                                    <td>
+                                                        <p>32.5"L x 18.5"W x 16.5"H</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="folded-w-wheels">
+                                                    <th>Folded (w/ wheels)</th>
+                                                    <td>
+                                                        <p>32.5"L x 24"W x 18.5"H</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="door-pass-through">
+                                                    <th>Door Pass Through</th>
+                                                    <td>
+                                                        <p>24</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="frame">
+                                                    <th>Frame</th>
+                                                    <td>
+                                                        <p>Aluminium</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="weight-wo-wheels">
+                                                    <th>Weight (w/o wheels)</th>
+                                                    <td>
+                                                        <p>20 LBS</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            }
                         </div>
                     </div>
                 </div>

@@ -1319,6 +1319,9 @@ footer .copyright ul li a:hover svg{
   font-size: 14px !important;
   transition: all 0.1s ease-in-out;
 }
+.productSize ul li a:hover{
+  background: #ececec;
+}
 .productSize ul li a.active{
   background: #6d4aae !important;
   color: #fff !important;
@@ -1339,4 +1342,8 @@ footer .copyright ul li a:hover svg{
 .productDetails .btn-circle svg{
   color: #000 !important;
   opacity: 0.8;
+  font-size: 18px;
+}
+.productDetails .btn-circle:hover{
+  background: #ccc !important;
 }
