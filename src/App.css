@@ -1349,7 +1349,7 @@ footer .copyright ul li a:hover svg{
 }
 .detailsPageTabs{
   border-radius: 25px !important;
-  background: #f1f1f1;
+  background: #fafafa;
 }
 .customTabs ul li{
   margin-right: 10px !important;
@@ -1388,12 +1388,17 @@ footer .copyright ul li a:hover svg{
 .reviewsCard .info{
   width: 85%;
 }
+.reviewForm h4{
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
 .reviewForm .form-group{
   margin-bottom: 25px;
 }
 .reviewForm .form-group .form-control{
-  height: 80px;
-  font-size: 20px;
+  height: 50px;
+  font-size: 16px;
   border-radius: 7px !important;
   padding-left: 20px;
 }
@@ -1413,4 +1418,8 @@ footer .copyright ul li a:hover svg{
 }
 .detailsPageTabs .table td p{
   margin-bottom: 0px;
+}
+.reviewsCard .info p{
+  font-size: 13px;
+  line-height: 22px;
 }

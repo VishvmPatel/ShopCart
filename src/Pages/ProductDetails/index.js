@@ -7,6 +7,7 @@ import { useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
 import { MdOutlineCompareArrows } from "react-icons/md";
 import Tooltip from "@mui/material/Tooltip";
+import RelatedProducts from "./RelatedProducts";
 
 const ProductDetails = () => {
     const [activeSize, setActiveSize] = useState(null);
@@ -153,13 +154,12 @@ const ProductDetails = () => {
                                                     <span className="text-g text-center font-weight-bold mt-2">HalfBlood</span>
                                                 </div>
 
-                                                <div className="info flex-grow-1">
-                                                    <div className="d-flex align-items-center w-100 mb-2">
+                                                <div className="info pl-5">
+                                                    <div className="d-flex justify-content-between align-items-center w-100 mb-2">
                                                         <h5 className="text-light mb-0">02/09/2024</h5>
-                                                        <div className="ml-auto">
-                                                            <Rating name="half-rating-read" value={4.5} precision={0.5} readOnly />
-                                                        </div>
+                                                        <Rating name="half-rating-read" value={4.5} precision={0.5} readOnly size="small" />
                                                     </div>
+
                                                     <p className="mb-0">
                                                         Noodles & Company is an American fast-casual restaurant that offers
                                                         international and American noodle dishes and pasta in addition to soups
@@ -175,7 +175,7 @@ const ProductDetails = () => {
                                             <br className="res-hide" /><br className="res-hide" />
 
                                             <form className="reviewForm">
-                                                <h4>Add a review</h4><br />
+                                                <h4>Add a review</h4>
                                                 <div className="form-group">
                                                     <textarea className="form-control" placeholder="Write a Review" name="review" ></textarea>
                                                 </div>
@@ -193,42 +193,19 @@ const ProductDetails = () => {
                                                 </div>
                                                 <br />
                                                 <div className="form-group">
-                                                    <Button type="submit" className="btn-g-btn-lg">Submit Review</Button>
+                                                    <Button type="submit" className="btn-blue btn-lg btn-big btn-round">Submit Review</Button>
                                                 </div>
                                             </form>
-                                        </div>
-
-                                        {/* RIGHT COLUMN - SUMMARY */}
-                                        <div className="col-md-4">
-                                            <div className="card p-4">
-                                                <h4>Customer reviews</h4>
-                                                <div className="d-flex align-items-center mb-2">
-                                                    <Rating value={4.5} precision={0.5} readOnly />
-                                                    <span className="ml-2 font-weight-bold">4.8 out of 5</span>
-                                                </div>
-
-                                                {[5, 4, 3, 2, 1].map((star, index) => (
-                                                    <div className="d-flex align-items-center mb-2" key={star}>
-                                                        <span style={{ width: '30px' }}>{star} star</span>
-                                                        <div className="progress flex-grow-1 ml-2" style={{ height: '8px' }}>
-                                                            <div
-                                                                className="progress-bar bg-success"
-                                                                role="progressbar"
-                                                                style={{ width: `${[75, 50, 55, 35, 25][index]}%` }}
-                                                                aria-valuenow={[75, 50, 55, 35, 25][index]}
-                                                                aria-valuemin="0"
-                                                                aria-valuemax="100"
-                                                            />
-                                                        </div>
-                                                    </div>
-                                                ))}
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             )}
                         </div>
                     </div>
+
+                    <br />
+
+                    <RelatedProducts/>
                 </div>
             </section>
         </>
