@@ -721,7 +721,7 @@ p {
 }
 .info .oldPrice{
   margin-right: 7px;
-  font-size: 16px;
+  font-size: 16px !important;
   font-weight: bold;
   color: rgba(0, 0,0,0.2);
   text-decoration: line-through;
@@ -730,11 +730,14 @@ p {
   font-size: 20px;
 }
 .info .netPrice{
-  font-size: 16px;
+  font-size: 16px !important;
   font-weight: bold;
 }
 .info .netPrice.lg{
   font-size: 20px;
+}
+.product_row .swiper{
+  padding-right: 80px !important;
 }
 .product_row .item{
   border-right: 1px solid transparent !important;
@@ -1279,8 +1282,11 @@ footer .copyright ul li a:hover svg{
 .section{
   padding: 45px 0px;
 }
-.productDetails .hd{
+.productDetails h2.hd{
   font-size: 26px;
+}
+.productDetails h3.hd{
+  font-size: 18px !important;
 }
 .productDetails .oldPrice{
   font-size: 20px;
