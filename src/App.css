@@ -1429,3 +1429,38 @@ footer .copyright ul li a:hover svg{
   font-size: 13px;
   line-height: 22px;
 }
+.cartPage .cartTable thead th {
+    background-color: #ececec;  
+    font-weight: 600;           
+    text-align: center;        
+    vertical-align: middle;
+    padding: 14px;
+    border-bottom: 2px solid #dee2e6;
+}
+.cartPage .cartTable td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px;
+    border-top: 1px solid #dee2e6;
+    overflow: hidden;
+}
+.cartPage .cartTable {
+    border-collapse: collapse;
+    border: none;
+}
+.cartPage .cartTable thead th {
+    border: none; 
+}
+.cartPage .cartTable td {
+    border-top: 1px solid #dee2e6;
+}
+.cartPage .cartTable {
+    border: none !important;
+}
+.cartPage .cartTable tbody tr:last-child td {
+    border-bottom: none;
+}
+.cartPage .table thead th:first-child{
+  border-top-left-radius: 15px !important;
+  border-bottom-left-radius: 15px !important;
+}
