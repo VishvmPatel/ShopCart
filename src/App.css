@@ -1430,7 +1430,7 @@ footer .copyright ul li a:hover svg{
   line-height: 22px;
 }
 .cartPage .cartTable thead th {
-    background-color: #ececec;  
+    background-color: #e3e3e3;  
     font-weight: 600;           
     text-align: center;        
     vertical-align: middle;
@@ -1449,7 +1449,7 @@ footer .copyright ul li a:hover svg{
     border: none;
 }
 .cartPage .cartTable thead th {
-    border: none; 
+    border: 0px !important; 
 }
 .cartPage .cartTable td {
     border-top: 1px solid #dee2e6;
@@ -1461,6 +1461,36 @@ footer .copyright ul li a:hover svg{
     border-bottom: none;
 }
 .cartPage .table thead th:first-child{
-  border-top-left-radius: 15px !important;
-  border-bottom-left-radius: 15px !important;
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+}
+.cartPage .table thead th:last-child{
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+.cartItemimgWrapper .imgWrapper{
+  width: 100px;
+  overflow: hidden;
+}
+.cartPage .cartTable thead th:first-child,
+.cartPage .cartTable td:first-child {
+    text-align: left !important;
+    padding-left: 15px; 
+}
+.cartPage .cartTable {
+    width: 100%;
+    table-layout: fixed; 
+}
+.cartPage .cartTable thead th:first-child,
+.cartPage .cartTable td:first-child {
+    text-align: left !important;
+    padding-left: 15px;
+}
+.cartPage .cartTable thead th:not(:first-child),
+.cartPage .cartTable td:not(:first-child) {
+    text-align: center;
+}
+.cartPage .cartTable th,
+.cartPage .cartTable td {
+    width: 20%;
 }

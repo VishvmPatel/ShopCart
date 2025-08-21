@@ -1,3 +1,5 @@
+import productImg1 from "../../assets/images/product-1-1.jpg";
+
 const Cart = () => {
     return (
         <section className="section cartPage">
@@ -20,7 +22,13 @@ const Cart = () => {
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td></td>
+                                        <td>
+                                            <div className="d-flex align-items-center cartItemimgWrapper">
+                                                <div className="imgWrapper">
+                                                    <img src={productImg1} alt="Product" className="w-100" />
+                                                </div>
+                                            </div>
+                                        </td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
