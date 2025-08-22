@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import productImg1 from "../../assets/images/product-1-1.jpg";
-
+import Rating from '@mui/material/Rating';
+import QuantityBox from "../../Components/QuantityBox";
 const Cart = () => {
     return (
         <section className="section cartPage">
@@ -23,14 +25,21 @@ const Cart = () => {
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <div className="d-flex align-items-center cartItemimgWrapper">
-                                                <div className="imgWrapper">
-                                                    <img src={productImg1} alt="Product" className="w-100" />
+                                            <Link to="/product/1" style={{textDecoration:"none",color:"inherit"}}>
+                                                <div className="d-flex align-items-center cartItemimgWrapper">
+                                                    <div className="imgWrapper">
+                                                        <img src={productImg1} alt="Product" className="w-100" />
+                                                    </div>
+
+                                                    <div className="info px-3">
+                                                        <h6>Field Roast Chao Cheese Creamy Original</h6>
+                                                        <Rating name="read-only" value={4.5} readOnly precision={0.5} size="small"/>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            </Link>
                                         </td>
-                                        <td></td>
-                                        <td></td>
+                                        <td>$7.25</td>
+                                        <td><QuantityBox/></td>
                                         <td></td>
                                         <td></td>
                                     </tr>
