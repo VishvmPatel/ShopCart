@@ -34,10 +34,20 @@ button{
   color: #fff !important;
   text-transform: capitalize !important;
 }
+.text-red{
+  color: #ed174a !important;
+}
+.text-blue{
+  color: #53348c !important;
+}
 .btn-big{
   font-size: 15px !important;
   padding: 7px 30px !important;
   min-width: auto !important;
+  font-weight: bold !important;
+}
+.btn-blue svg{
+  font-size: 22px;
 }
 .btn-round{
   border-radius: 30px !important;
@@ -1518,8 +1528,37 @@ footer .copyright ul li a:hover svg{
   text-decoration: none;
   color: inherit;
 }
-
 .cartPage .cartTable td a:hover {
   text-decoration: none;
   color: #ed174a;
+}
+.remove{
+  cursor: pointer;
+}
+.remove svg{
+  font-size: 30px ;
+}
+.remove:hover svg{
+  color: #ed174a !important;
+}
+.cartPage .quantityDrop button{
+  zoom: 75%;
+}
+.cartPage table th, .cartPage table td{
+  vertical-align: middle;
+}
+.cartPage .table td, .cartPage .table th{
+  border-top: 0px !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+.cartDetails{
+  border-radius: 7px !important;
+  position: sticky !important;
+  top: 20px;
+}
+.cartDetails h4{
+  font-size: 16px;
+  padding-bottom: 15px;
+  font-weight: 800 !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
 }

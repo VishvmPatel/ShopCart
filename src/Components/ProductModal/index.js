@@ -2,11 +2,12 @@ import Dialog from '@mui/material/Dialog';
 import { MdClose, MdOutlineCompareArrows } from 'react-icons/md';
 import Button from '@mui/material/Button';
 import { Rating } from '@mui/material';
-import { useContext, useRef } from 'react';
+import { useContext} from 'react';
 import QuantityBox from '../QuantityBox';
 import { IoIosHeartEmpty } from 'react-icons/io';
 import { MyContext } from '../../App';
 import ProductZoom from '../ProductZoom';
+import { IoCartSharp } from 'react-icons/io5';
 
 const ProductModal = (props)=>{
     
@@ -44,7 +45,7 @@ const ProductModal = (props)=>{
                         <p className='mt-3'>Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent</p>
                         <div className='d-flex align-items-center'>
                             <QuantityBox/>
-                            <Button className='btn-blue btn-lg btn-big btn-round ml-3'>Add to Cart</Button>
+                            <Button className='btn-blue btn-lg btn-big btn-round ml-3'><IoCartSharp/>Add to Cart</Button>
                         </div>
                         <div className='d-flex align-items-center mt-5 actions'>
                             <Button className='btn-round btn-sml' variant='outlined'><IoIosHeartEmpty/> &nbsp; ADD TO WISHLIST</Button>
