@@ -1608,13 +1608,26 @@ footer .copyright ul li a:hover svg{
   height: 500px;
   background: #fff;
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  padding-top: 40px; 
+  padding: 30px;
+  text-align: left;
+  position: relative;
+  z-index: 100;
 }
-.signInPage .box img {
-  height: 60px;
+.logo-center {
+  display: flex;
+  justify-content: center; 
+}
+.logo-center img {
+  height: 60px; 
   width: auto;
-  margin-bottom: 20px; 
+}
+.signInPage .box h2{
+  font-size: 25px;
+  font-weight: 600;
+}
+.signInPage .box form {
+  padding: 20px 30px;
+}
+.signInPage .box .form-group {
+  margin-bottom: 20px;
 }

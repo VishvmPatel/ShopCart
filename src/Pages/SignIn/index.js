@@ -1,6 +1,7 @@
 import { useContext, useEffect } from "react";
 import { MyContext } from "../../App";
 import Logo from '../../assets/images/logo.jpg';
+import TextField from "@mui/material/TextField";
 
 const SignIn = () => {
 
@@ -19,9 +20,19 @@ const SignIn = () => {
             </div>
             <div className="container">
                 <div className="box card p-3 shadow border-0">
-                    <div className="text-center">
-                        <img src={Logo}/>
+                    <div className="logo-center">
+                        <img src={Logo} alt="ShopCart Logo" />
                     </div>
+                    <h2 className="mt-3">Sign In</h2>
+                    
+                    <form>
+                        <div className="form-group">
+                            <TextField id="standard-basic" label="Email" type="email" required variant="standard" className="w-100"/>
+                        </div>
+                        <div className="form-group">
+                            <TextField id="standard-basic" label="Password" type="password"required variant="standard" className="w-100"/>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
