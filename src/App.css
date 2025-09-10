@@ -46,6 +46,39 @@ button{
   min-width: auto !important;
   font-weight: bold !important;
 }
+.btn-lg {
+  width: auto !important;
+  margin-right: 1%;
+}
+.btn-blue {
+    background-color: #6c5ce7;
+    color: white;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    transition: none;
+    margin-right: 0;
+}
+.part3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.btn-blue:disabled {
+    background-color: #b0b0b0;
+    cursor: not-allowed;
+}
+.btn-blue:active {
+    background-color: #4e44d6;
+}
 .btn-blue svg{
   font-size: 22px;
 }
@@ -83,21 +116,29 @@ button{
 ::-webkit-scrollbar-track{
   background: transparent !important;
 }
+header .part3 a,
+header .part3 button,
+header .part2 a,
+header .part2 button {
+  display: inline-flex !important;
+  width: auto !important;
+  max-width: max-content;
+}
+.headerWrapper .header .part2 > * {
+  flex-shrink: 0;
+}
 .headerWrapper {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-
 .headerWrapper .top-strip {
   padding: 8px 0;
 }
-
 .headerWrapper .top-strip p {
   color: #fff;
   font-size: 12px;
   font-weight: 700;
   margin: 0;
 }
-
 .headerWrapper .header {
   width: 100%;
   padding: 18px 30px;
@@ -108,19 +149,16 @@ button{
   flex-wrap: nowrap;
   box-sizing: border-box;
 }
-
 .logoWrapper {
   flex-shrink: 0;
   display: flex;
   align-items: center;
 }
-
 .logoWrapper img {
-  height: 45px; /* smaller, cleaner logo size */
+  height: 45px;
   width: auto;
   max-width: none;
 }
-
 .headerWrapper .header .part2 {
   display: flex;
   align-items: center;
@@ -128,7 +166,6 @@ button{
   flex: 1;
   min-width: 0;
 }
-
 .headerWrapper .header .part2 .countryDrop {
   width: 170px;
   height: 60px;
@@ -142,14 +179,12 @@ button{
   flex-shrink: 0;
   background: #f1f1f1;
 }
-
 .headerWrapper .header .part2 .countryDrop .label {
   font-size: 12px !important;
   text-transform: capitalize !important;
-  color: #000 !important; /* changed back to black */
+  color: #000 !important; 
   line-height: 16px;
 }
-
 .headerWrapper .header .part2 .countryDrop .name {
   font-size: 14px !important;
   text-transform: capitalize !important;
@@ -157,11 +192,9 @@ button{
   font-weight: 700;
   line-height: 16px;
 }
-
 .headerWrapper .header .part2 .countryDrop span.ml-auto svg {
   opacity: 0.7;
 }
-
 .headerSearch {
   flex: 1;
   min-width: 0;
@@ -172,7 +205,6 @@ button{
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-
 .headerSearch input {
   background: transparent !important;
   outline: none !important;
@@ -183,11 +215,9 @@ button{
   border: 0 !important;
   padding: 0 20px !important;
 }
-
 .headerSearch input::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
-
 .headerSearch button {
   position: absolute;
   top: 10px;
@@ -199,19 +229,16 @@ button{
   border-radius: 50% !important;
   color: #000;
 }
-
 .headerSearch button svg {
   font-size: 25px;
   opacity: 0.8;
 }
-
 header .part3 {
   display: flex;
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
 }
-
 header .part3 .circle {
   display: flex;
   align-items: center;
@@ -223,11 +250,9 @@ header .part3 .circle {
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
   color: #000;
 }
-
 header .part3 .circle svg {
   font-size: 22px;
 }
-
 .cartTab {
   position: relative;
   display: flex;
@@ -235,22 +260,19 @@ header .part3 .circle svg {
   gap: 5px;
   margin-left: 5px;
 }
-
 .cartTab .price {
   font-size: 18px;
   color: rgba(0, 0, 0, 0.8);
   font-weight: 700;
   margin: 0;
+  margin-right: 10px;
 }
-
 .cartTab button {
   background: #fff1ee !important;
 }
-
 .cartTab button svg {
   color: #ea2b0f !important;
 }
-
 .cartTab .count {
   position: absolute;
   top: -6px;
@@ -304,7 +326,6 @@ header .part3 .circle svg {
 .close_ svg{
   font-size: 22px;
 }
-
 nav .navPart1{
   max-width: 20%;
   flex: 0 0 20%;
@@ -313,7 +334,6 @@ nav .navPart2{
   max-width: 80%;
   flex: 0 0 80%;
 }
-
 nav .navPart1 .catWrapper{
   position: relative;
 }
@@ -493,17 +513,14 @@ nav .navPart2 ul li:hover .submenu{
   width: 100%;
   max-width: 100%;
 }
-
 .bannerSlide {
   position: relative;
   width: 100%;
 }
-
 .bannerImage {
   width: 100%;
   display: block;
 }
-
 .bannerContent {
   position: absolute;
   top: 50%;
@@ -519,41 +536,35 @@ nav .navPart2 ul li:hover .submenu{
   color: #000;
   z-index: 10;
   max-width: 80%;
-  background: rgba(255, 255, 255, 0.6); /* Light background to improve readability */
+  background: rgba(255, 255, 255, 0.6);
   border-radius: 8px;
 }
-
 .bannerOverlayText .smallTitle {
   font-size: 12px;
   color: #4caf50;
   font-weight: 500;
   margin-bottom: 5px;
 }
-
 .bannerOverlayText .mainTitle {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 8px;
 }
-
 .bannerOverlayText .mainTitle strong {
   font-weight: 700;
   color: #212121;
 }
-
 .bannerOverlayText .subText {
   font-size: 14px;
   color: #666;
   margin: 0;
 }
-
 .bannerOverlayText .priceText {
   font-size: 22px;
   font-weight: 700;
   color: #e53935;
   margin: 5px 0;
 }
-
 .shopNowBtn {
   background-color: #1E90FF;
   color: #fff;
@@ -564,7 +575,6 @@ nav .navPart2 ul li:hover .submenu{
   font-weight: 500;
   cursor: pointer;
 }
-
 .shopNowBtn:hover {
   background-color: #0d6efd;
 }
@@ -575,42 +585,36 @@ nav .navPart2 ul li:hover .submenu{
   color: #000;
   z-index: 10;
   max-width: 80%;
-  background: rgba(255, 204, 0, 0.8); /* Yellowish transparent background */
+  background: rgba(255, 204, 0, 0.8);
   border-radius: 8px;
   padding: 10px;
 }
-
 .banner1Text .smallTitle {
   font-size: 12px;
   color: #fff;
   font-weight: 500;
   margin-bottom: 5px;
 }
-
 .banner1Text .mainTitle {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 8px;
 }
-
 .banner1Text .mainTitle strong {
   font-weight: 700;
   color: #212121;
 }
-
 .banner1Text .subText {
   font-size: 14px;
   color: #666;
   margin: 0;
 }
-
 .banner1Text .priceText {
   font-size: 22px;
   font-weight: 700;
   color: #e53935;
   margin: 5px 0;
 }
-
 .offerText {
   background: #DFF6DD;
   color: #1D783A;
@@ -618,27 +622,23 @@ nav .navPart2 ul li:hover .submenu{
   border-radius: 5px;
   font-weight: bold;
 }
-
 h2 {
   font-size: 2rem;
   font-weight: bold;
   margin: 10px 0;
 }
-
 p {
   font-size: 1rem;
   color: #5A5A5A;
   margin-bottom: 10px;
 }
-
 .priceText {
   font-size: 1.2rem;
   color: #FF3B30;
   font-weight: bold;
-  display: block;  /* Ensures it takes full width and moves button to the next line */
-  margin-bottom: 10px;  /* Adds space between price and button */
+  display: block;  
+  margin-bottom: 10px; 
 }
-
 .shopButton {
   background: #1E90FF;
   color: white;
@@ -649,11 +649,9 @@ p {
   cursor: pointer;
   margin-top: 10px;
 }
-
 .shopButton:hover {
   background: #007BFF;
 }
-
 .homeBannerSection .slick-arrow.slick-next{
   right: 25px !important;
 }
@@ -761,20 +759,17 @@ p {
 .badge-primary{
   background: #2bbef9 !important;
 }
-
-/* Modified action buttons styles */
 .productItem .actions{
   position: absolute;
   top: 20px;
-  right: -100%;  /* Start off-screen */
+  right: -100%;
   z-index: 1000;
   display: flex;
   flex-direction: column;
   gap: 10px;
   transition: all 0.3s ease-in-out;
-  opacity: 0;  /* Start invisible */
+  opacity: 0; 
 }
-
 .productItem .actions button{
   display: flex;
   align-items: center;
@@ -807,18 +802,13 @@ p {
 .productItem .imgWrapper img{
   transition: all 0.3s ease-in-out;
 }
-
-/* Show actions on hover */
 .productItem .imgWrapper:hover .actions{
   opacity: 1;
   right: 10px;
 }
-
 .productItem .imgWrapper:hover img{
   transform: scale(1.1);
 }
-
-/* Modal open state */
 body.modal-open .productItem .actions {
   right: 10px;
   opacity: 1;
@@ -1084,11 +1074,6 @@ footer .copyright ul li a:hover svg{
   width: 20%;
   flex: 0 0 20%;
 }
-/*
-.product_Listing_Page .productListing .sidebar .sticky{
-  position: sticky;
-  top: 20px;
-}*/
 .product_Listing_Page .productListing .sidebar .filterBox{
   margin-bottom: 35px;
 }
@@ -1572,8 +1557,6 @@ footer .copyright ul li a:hover svg{
   overflow: hidden;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
-/* Background Shape */
 .signInPage .shape-bottom {
   position: absolute;
   left: 0;
@@ -1581,13 +1564,11 @@ footer .copyright ul li a:hover svg{
   bottom: -120px;
   z-index: 2;
 }
-
 .signInPage .shape-bottom svg {
   display: block;
   width: 100%;
   height: auto;
 }
-
 .signInPage::after {
   position: absolute;
   content: '';
@@ -1599,8 +1580,6 @@ footer .copyright ul li a:hover svg{
   opacity: 0.95;
   z-index: 1;
 }
-
-/* Center Container */
 .signInPage .container {
   position: relative;
   z-index: 3;
@@ -1609,8 +1588,6 @@ footer .copyright ul li a:hover svg{
   justify-content: center; 
   align-items: center; 
 }
-
-/* Card Box */
 .signInPage .box {
   width: 420px;
   background: #fff;
@@ -1620,20 +1597,16 @@ footer .copyright ul li a:hover svg{
   text-align: center;
   animation: fadeInUp 0.6s ease;
 }
-
 @keyframes fadeInUp {
   0% { transform: translateY(40px); opacity: 0; }
   100% { transform: translateY(0); opacity: 1; }
 }
-
 .signInPage .box h2 {
   font-size: 26px;
   font-weight: 700;
   margin-top: 15px;
   color: #333;
 }
-
-/* Logo */
 .logo-center {
   display: flex;
   justify-content: center; 
@@ -1642,8 +1615,6 @@ footer .copyright ul li a:hover svg{
   height: 60px; 
   width: auto;
 }
-
-/* Form */
 .signInPage .box form {
   margin-top: 20px;
   text-align: left;
@@ -1651,8 +1622,30 @@ footer .copyright ul li a:hover svg{
 .signInPage .box .form-group {
   margin-bottom: 20px;
 }
-
-/* Buttons */
+.signInPage .same-size {
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.signInPage .d-flex .btn-lg,
+.signInPage .d-flex .same-size {
+  min-width: 0;
+  flex: 1;    
+  text-align: center;
+}
+.signInPage .d-flex button {
+  flex: 1;
+  min-width: 0;
+  text-align: center;
+}
+.signInPage .d-flex a {
+  flex: 1;
+  display: flex;
+}
 .btn-blue {
   background: #6d4aae !important;
   color: #fff !important;
@@ -1666,8 +1659,6 @@ footer .copyright ul li a:hover svg{
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(109, 74, 174, 0.3);
 }
-
-/* Border-effect links */
 .border-effect {
   position: relative;
   color: #6d4aae;
@@ -1691,36 +1682,34 @@ footer .copyright ul li a:hover svg{
 .border-effect:hover:after {
   width: 100%;
 }
-
-/* Small Text */
 .signInPage .box .txt {
   font-size: 14px;
   font-weight: 500;
   color: #666;
 }
-/* Google Button */
 .loginWithGoogle {
   display: flex;
-  justify-content: center;   /* center horizontally */
-  align-items: center;       /* center vertically */
-  width: 100%;               /* still full width */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   margin-top: 20px;
   border: none;
   background: transparent;
   padding: 0;
   cursor: pointer;
 }
-
 .loginWithGoogle img {
-  width: 220px;              /* size of the button */
+  width: 220px;
   height: auto;
   display: block;
   border-radius: 8px;
   transition: all 0.3s ease;
-  margin: 0 auto;            /* extra guarantee it stays centered */
+  margin: 0 auto; 
 }
-
 .loginWithGoogle img:hover {
   background: #f7f7f7;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.signUpPage .box{
+  width: 500px;
 }
