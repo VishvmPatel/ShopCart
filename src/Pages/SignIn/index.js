@@ -2,6 +2,9 @@ import { useContext, useEffect } from "react";
 import { MyContext } from "../../App";
 import Logo from '../../assets/images/logo.jpg';
 import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
+import GoogleImg from '../../assets/images/googleImg.png';
 
 const SignIn = () => {
 
@@ -25,13 +28,20 @@ const SignIn = () => {
                     </div>
                     <h2 className="mt-3">Sign In</h2>
                     
-                    <form>
+                    <form className="mt-3">
                         <div className="form-group">
                             <TextField id="standard-basic" label="Email" type="email" required variant="standard" className="w-100"/>
                         </div>
                         <div className="form-group">
-                            <TextField id="standard-basic" label="Password" type="password"required variant="standard" className="w-100"/>
+                            <TextField id="standard-basic" label="Password" type="password" required variant="standard" className="w-100"/>
                         </div>
+                        <a className="border-effect cursor txt">Forgot Password?</a>
+                        <Button className="btn-blue btn-lg btn-big w-100 mt-3 mb-3">Sign In</Button>
+                        <p className="txt">Not Registered? <Link to="/signUp" className="border-effect">Sign Up</Link></p>
+                        <h6 className="mt-4 text-center font-weight-bold">Or continue with social account</h6>
+                        <button className="loginWithGoogle">
+                            <img src={GoogleImg} alt="Google Sign In" className="google-btn-img" />
+                        </button>
                     </form>
                 </div>
             </div>
