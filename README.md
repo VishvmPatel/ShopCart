@@ -1,6 +1,6 @@
 # 🛒 ShopCart - Your One-Stop Online Store  
 
-![ShopCart Logo](src/assets/images/logo.jpg)  
+![ShopCart Logo](client/src/assets/images/logo.jpg)  
 
 Welcome to **ShopCart** - your ultimate destination for online shopping! 🚀 This is a modern eCommerce platform built using the **MERN stack** (MongoDB, Express, React, and Node.js). Whether you're a shopper or an admin, **ShopCart** has got you covered. 🎉  
 
