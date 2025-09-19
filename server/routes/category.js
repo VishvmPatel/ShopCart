@@ -1,6 +1,14 @@
 const { Category } = require('../models/category');
 const express = require('express');
 const router = express.Router();
+const pLimit = require('p-limit');
+const cloudinary = require('cloudinary').v2;
+
+cloudinary.config({
+    cloud_name: process.env.cloudinary_Config_Cloud_Name,
+    api_key: process.env.cloudinary_Config_api_key,
+    api_secret: process.env.cloudinary_Config_api_secret,
+});
 
 router.get('/', async (req, res) => {
     const categoryList = await Category.find();
@@ -10,6 +18,65 @@ router.get('/', async (req, res) => {
     }
 
     res.send(categoryList);
+});
+
+router.get('/:id', async (req, res) => {
+    const category = await Category.findById(req.params.id);
+
+    if (!category) {
+        res.status(500).json({ message: 'The category with the given ID was not found.' })
+    }
+    return res.status(200).send(category);
+})
+
+router.post('/create', async (req, res) => {
+    // This code assumes you have 'p-limit' and your Cloudinary config set up
+    const limit = pLimit(2);
+
+    const imagesToUpload = req.body.images.map((image) => {
+        return limit(async () => {
+            const result = await cloudinary.uploader.upload(image);
+            // console.log(`Successfully uploaded ${image}`);
+            // console.log(`> Result: ${result.secure_url}`);
+            return result;
+        });
+    });
+    
+    try {
+        const uploadStatus = await Promise.all(imagesToUpload);
+
+        if (!uploadStatus) {
+            return res.status(500).json({
+                error: "images cannot upload!",
+                status: false
+            });
+        }
+
+        const imgurl = uploadStatus.map((item) => {
+            return item.secure_url;
+        });
+
+        let category = new Category({
+            name: req.body.name,
+            images: imgurl,
+            color: req.body.color
+        });
+
+        category = await category.save();
+
+        if (!category) {
+             // This check is often handled by the catch block below,
+             // as .save() will throw an error on failure.
+        }
+
+        res.status(201).json(category);
+
+    } catch (err) {
+        res.status(500).json({
+            error: err,
+            success: false
+        });
+    }
 });
 
 module.exports = router;
