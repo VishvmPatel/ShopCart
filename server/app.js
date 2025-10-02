@@ -10,12 +10,14 @@ app.use(cors());
 app.options(/.*/, cors());
 
 //middleware
-app.use(bodyParser.json());
+app.use(express.json());
 
 //Routes
 const categoryRoutes = require('./routes/category');
+const productRoutes = require('./routes/products');
 
 app.use(`/api/category`, categoryRoutes);
+app.use(`/api/products`, productRoutes);
 
 //Database
 mongoose.connect(process.env.CONNECTION_STRING, {
